@@ -493,7 +493,7 @@ body {
 
 	/* ------------------------------------ */
 	/* [1280px] 상단(header.html) */
-	#header .box .menu .list .link {
+	/*#header .box .menu .list .link {
 			font-size: 1.7rem;
 	}
 	#header .box .menu .list .drop {
@@ -501,22 +501,22 @@ body {
 	}
 	#header .box .menu .list .drop li a {
 			font-size: 1.3rem;
-	}
+	}*/
 
 	/* ------------------------------------ */
 	/* [1280px] 하단(footer.html) */
-	#footer .box .title {
+	/*#footer .box .title {
 		font-size: 1.2rem;
 	}
 	#footer .box .copyright {
 		font-size: 1.2rem;
-	}
+	}*/
 
 	/* ------------------------------------ */
 	/* [1280px] 메인(index.html) */
-	#main .sec1 .box .explain {
+	/*#main .sec1 .box .explain {
 		font-size: 1.5rem;
-	}
+	}*/
 }
 /* TABLET 기준 */
 @media only screen and (max-width: 1023px) {
