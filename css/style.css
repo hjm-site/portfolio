@@ -386,13 +386,13 @@ body {
 }
 #footer .box .title {
 	color: #FFF;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	text-align: center;
 	margin-bottom: 1rem;
 }
 #footer .box .copyright {
 	color: #FFF;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	text-align: center;
 }
 
@@ -427,7 +427,7 @@ body {
 	margin: 0 auto;
 }
 #main .sec1 .box .hello {
-	width: 18rem;
+	width: 16rem;
 	max-width: 100%;
 }
 #main .sec1 .box .explain {
@@ -552,7 +552,7 @@ body {
     padding: 6rem 2rem;
 	}
 	#main .sec1 .box .hello {
-		width: 15rem;
+		width: 14rem;
 	}
 }
 @media only screen and (max-width: 450px) {
