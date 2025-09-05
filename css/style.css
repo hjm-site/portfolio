@@ -1,0 +1,584 @@
+/* 폰트 */
+@font-face {
+  font-family:'pl_L';
+  src: url('../font/Paperlogy-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:'pl_M';
+  src: url('../font/Paperlogy-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:'pl_B';
+  src: url('../font/Paperlogy-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:'pl_Bk';
+  src: url('../font/Paperlogy-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* input 자동완성 배경 제거 */
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 30px #FFF inset;
+	-webkit-text-fill-color: #000;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* 마우스 드래그 */
+::-moz-selection {
+  background-color: #FAC3C3;
+  color: #000;
+}
+::selection {
+  background-color: #FAC3C3;
+  color: #000;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* 초기화 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+li, ol, ul {
+	list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+	transition: all .5s;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input, button, textarea, select {
+  outline: none;
+}
+select {
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+}
+button {
+	background-color: unset;
+	border: unset;
+	color: #000;
+	cursor: pointer;
+	transition: all .5s;
+}
+img {
+	transition: all .5s;
+}
+p {
+	word-break: keep-all;
+}
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'pl_M';
+	font-size: 16px;
+	word-break: keep-all;
+}
+body {
+  width: 100%;
+}
+
+/* ------------------------------------ */
+/* 스크롤 */
+.scroll::-webkit-scrollbar {
+	width: 0.6rem;
+	padding: 5rem;
+}
+.scroll::-webkit-scrollbar-thumb {
+	background-color: rgba(32, 32, 79, 0.7);
+	border-radius: 10px;
+	background-clip: padding-box;
+	border: 2px solid transparent;
+}
+.scroll::-webkit-scrollbar-track {
+	background-color: rgba(32, 32, 79, 0.2);
+	border-radius: 10px;
+	box-shadow: inset 0px 0px 5px white;
+}
+
+/* ------------------------------------ */
+/* 상단(header.html) */
+#header {
+	width: 100%;
+	height: 120px;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #FFF6F6;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	z-index: 100;
+	padding: 0 3rem;
+}
+#header .box {
+	width: 100%;
+	max-width: 1400px;
+	height: 100%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	column-gap: 2rem;
+	margin: 0 auto;
+}
+#header .box .logo {
+	height: 100%;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#header .box .logo img {
+	width: 18rem;
+	max-height: 80%;
+	box-sizing: border-box;
+	object-fit: contain;
+}
+#header .box .menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	column-gap: 2rem;
+}
+#header .box .menu .list {
+  position: relative;
+}
+#header .box .menu .list .link {
+	display: block;
+	position: relative;
+	font-family: 'pl_B';
+	font-size: 1.5rem;
+	text-align: center;
+	z-index: 1;
+}
+#header .box .menu .list .link:after {
+	content: '';
+	width: 0;
+	height: 1.1rem;
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	background-color: rgba(250, 195, 195, 0.8);
+	z-index: -1;
+	transition: all .5s;
+}
+#header .box .menu .list .link.active:after {
+	width: 100%;
+	left: 0%;
+}
+#header .box .menu .list .drop {
+	width: 15rem;
+	box-sizing: border-box;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 5%);
+	display: none;
+	background-color: #FFF;
+	border-radius: 5px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	padding: 1.5rem 0;
+	transition: opacity 0.2s ease;
+}
+#header .box .menu .list .drop li {
+	text-align: center;
+	margin-bottom: 1rem;
+}
+#header .box .menu .list .drop li:last-child {
+  margin-bottom: 0;
+}
+#header .box .menu .list .drop li a {
+	width: 100%;
+	box-sizing: border-box;
+	display: block;
+	font-size: 1.1rem;
+	text-align: center;
+	padding: 0 1rem;
+}
+#header .box .burger {
+	width: 23px;
+	height: 20px;
+	display: none;
+	z-index: 300;
+	cursor: pointer;
+}
+#header .box .burger .trigger {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	position: relative;
+	transition: all .5s;
+}
+#header .box .burger .trigger span {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #000;
+	border-radius: 4px;
+	display: inline-block;
+	transition: all .5s;
+}
+#header .box .burger .trigger .line1 {
+	top: 0;
+}
+#header .box .burger .trigger .line2 {
+  top: 9px;
+}
+#header .box .burger .trigger .line3 {
+	bottom: 0;
+}
+#header .box .burger .trigger .line1.cross {
+	transform: translateY(9px) rotate(-45deg);
+}
+#header .box .burger .trigger .line2.out {
+	opacity: 0;
+}
+#header .box .burger .trigger .line3.cross {
+	transform: translateY(-9px) rotate(45deg);
+}
+#header .box .mobile {
+	width: 80%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	transform: translateX(100px);
+	background-color: #FFF;
+	visibility: hidden;
+	opacity: 0;
+	overflow-y: auto;
+	z-index: 200;
+	transition: all .5s;
+}
+#header .box .mobile.open {
+	display: none;
+	visibility: visible;
+	opacity: 1;
+	transform: translateX(0px);
+}
+#header .box .mobile .mb_box {
+	display: flex;
+	flex-direction: column;
+	margin-top: 120px;
+}
+#header .box .mobile .mb_box .main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	background-color: #F6F6F6;
+	border-bottom: 1px solid #DDD;
+	padding: 1.5rem;
+}
+#header .box .mobile .mb_box .main:first-child {
+  border-top: 1px solid #DDD;
+}
+#header .box .mobile .mb_box .main span {
+	font-family: 'pl_B';
+	font-size: 1.5rem;
+}
+#header .box .mobile .mb_box .main .arrow {
+	width: 1.8rem;
+	height: 1.8rem;
+	background-image: url('../img/arrow_bottom.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+}
+#header .box .mobile .mb_box .main .arrow.up {
+  background-image: url('../img/arrow_top.png');
+}
+#header .box .mobile .mb_box .sub {
+	display: none;
+	background-color: #FFF;
+}
+#header .box .mobile .mb_box .sub a {
+	display: block;
+  border-bottom: 1px solid #C1C1C1;
+	font-size: 1.4rem;
+	line-height: 130%;
+	transition: all .5s;
+	padding: 1.5rem;
+}
+#header .box .mobile .mb_box .sub a:last-child {
+	border-bottom: 1px solid #DDD;
+  margin-bottom: 0;
+}
+#header .box .mobile_bg {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .3);
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.5s;
+	z-index: 100;
+}
+#header .box .mobile_bg.set {
+	display: none;
+	visibility: visible;
+	opacity: 1;
+	transition: all .5s;
+}
+
+/* ------------------------------------ */
+/* 하단(footer.html) */
+#footer {
+	width: 100%;
+  box-sizing: border-box;
+	background-color: #303030;
+	padding: 4rem 3rem;
+}
+#footer .box {
+	width: 100%;
+	max-width: 1400px;
+	height: 100%;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+#footer .box .title {
+	color: #FFF;
+	font-size: 1.1rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+#footer .box .copyright {
+	color: #FFF;
+	font-size: 1.1rem;
+	text-align: center;
+}
+
+/* ------------------------------------ */
+/* [공통] 페이지 */
+/* 메인(index.html) */
+.page {
+	margin-top: 120px;
+}
+
+/* ------------------------------------ */
+/* 메인(index.html) */
+#main {
+	width: 100%;
+  box-sizing: border-box;
+}
+#main .sec1 {
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #FDE7E7;
+	padding: 6rem 3rem;
+}
+#main .sec1 .box {
+	width: 100%;
+	max-width: 1400px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 3rem;
+	margin: 0 auto;
+}
+#main .sec1 .box .hello {
+	width: 18rem;
+	max-width: 100%;
+}
+#main .sec1 .box .explain {
+	font-size: 1.4rem;
+	line-height: 150%;
+	text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* 마우스 hover */
+/* 상단(header.html) */
+/* 메뉴의 텍스트 - 형광펜 */
+#header .box .menu .list:hover .link:after {
+	width: 100%;
+	left: 0;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* 마우스 hover PC 버전만 적용 */
+@media (hover: hover) {
+	/* 상단(header.html) */
+	/* 메뉴 드롭 텍스트 - 폰트 색상 변경 */
+	#header .box .menu .list .drop li a:hover {
+		color: #848484;
+	}
+	/* 모바일 메인 텍스트 - 배경 색상 및 폰트 색상 변경 */
+	#header .box .mobile .mb_box .main:hover {
+	  background-color: #FAC3C3;
+		color: #FFF;
+	}
+	/* 모바일 서브 텍스트 - 폰트 색상 변경 */
+	#header .box .mobile .mb_box .sub a:hover {
+		color: #848484;
+	}
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* 반응형 */
+/* PC 기준 */
+@media only screen and (max-width: 1600px) {
+	/* [1600px] 초기화 */
+	html {
+		font-size: 15px;
+	}
+
+	/* ------------------------------------ */
+	/* 상단(header.html) */
+	#header .box .menu .list .drop {
+    left: 0%;
+	}
+}
+@media only screen and (max-width: 1400px) {
+	/* [1400px] 초기화 */
+	html {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 1280px) {
+	/* [1280px] 초기화 */
+	html {
+		font-size: 13px;
+	}
+
+	/* ------------------------------------ */
+	/* [1280px] 상단(header.html) */
+	#header .box .menu .list .link {
+			font-size: 1.7rem;
+	}
+	#header .box .menu .list .drop {
+			left: 10%;
+	}
+	#header .box .menu .list .drop li a {
+			font-size: 1.3rem;
+	}
+
+	/* ------------------------------------ */
+	/* [1280px] 하단(footer.html) */
+	#footer .box .title {
+		font-size: 1.2rem;
+	}
+	#footer .box .copyright {
+		font-size: 1.2rem;
+	}
+
+	/* ------------------------------------ */
+	/* [1280px] 메인(index.html) */
+	#main .sec1 .box .explain {
+		font-size: 1.5rem;
+	}
+}
+/* TABLET 기준 */
+@media only screen and (max-width: 1023px) {
+	/* [1023px] 초기화 */
+	html {
+		font-size: 12px;
+	}
+}
+/* MOBILE 기준 */
+@media only screen and (max-width: 767px) {
+	/* [767px] 초기화 */
+	html {
+		font-size: 11px;
+	}
+	
+	/* ------------------------------------ */
+	/* [767px] 상단(header.html) */
+	#header {
+		height: 80px;
+		padding: 0 2rem;
+	}
+	#header .box .menu {
+		display: none;
+	}
+	#header .box .btn {
+		display: none;
+	}
+	#header .box .burger {
+		display: block;
+	}
+	#header .box .mobile.open {
+		display: block;
+	}
+	#header .box .mobile_bg.set {
+		display: block;
+	}
+	#header .box .mobile .mb_box {
+		margin-top: 80px;
+	}
+
+	/* ------------------------------------ */
+	/* [767px] 하단(footer.html) */
+	#footer {
+		padding: 4rem 2rem;
+	}
+
+	/* ------------------------------------ */
+	/* [767px] [공통] 페이지 */
+	/* [767px] 메인(index.html) */
+	.page {
+		margin-top: 80px;
+	}
+	
+	/* ------------------------------------ */
+	/* [767px] 메인(index.html) */
+	#main .sec1 {
+    padding: 6rem 2rem;
+	}
+}
+@media only screen and (max-width: 450px) {
+	/* [450px] 초기화 */
+	html {
+		font-size: 10px;
+	}
+}
