@@ -213,11 +213,11 @@ body {
 	left: 0%;
 }
 #header .box .menu .list .drop {
-	width: 15rem;
+	width: 13rem;
 	box-sizing: border-box;
 	position: absolute;
 	left: 50%;
-	transform: translate(-50%, 5%);
+	transform: translate(-50%, 0%);
 	display: none;
 	background-color: #FFF;
 	border-radius: 5px;
@@ -236,7 +236,7 @@ body {
 	width: 100%;
 	box-sizing: border-box;
 	display: block;
-	font-size: 1.1rem;
+	font-size: 1rem;
 	text-align: center;
 	padding: 0 1rem;
 }
@@ -344,7 +344,7 @@ body {
 	font-size: 1.3rem;
 	line-height: 130%;
 	transition: all .5s;
-	padding: 1.5rem;
+	padding: 1.2rem 1.5rem;
 }
 #header .box .mobile .mb_box .sub a:last-child {
 	border-bottom: 1px solid #DDD;
@@ -386,13 +386,13 @@ body {
 }
 #footer .box .title {
 	color: #FFF;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	text-align: center;
 	margin-bottom: 1rem;
 }
 #footer .box .copyright {
 	color: #FFF;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	text-align: center;
 }
 
@@ -427,11 +427,11 @@ body {
 	margin: 0 auto;
 }
 #main .sec1 .box .hello {
-	width: 16rem;
+	width: 14rem;
 	max-width: 100%;
 }
 #main .sec1 .box .explain {
-	font-size: 1.3rem;
+	font-size: 1.15rem;
 	line-height: 145%;
 	text-align: center;
 }
@@ -476,7 +476,7 @@ body {
 	/* ------------------------------------ */
 	/* [1600px] 상단(header.html) */
 	#header .box .menu .list .drop {
-    left: 0%;
+    left: 10%;
 	}
 }
 @media only screen and (max-width: 1400px) {
@@ -552,7 +552,7 @@ body {
     padding: 6rem 2rem;
 	}
 	#main .sec1 .box .hello {
-		width: 14rem;
+		width: 12rem;
 	}
 }
 @media only screen and (max-width: 450px) {

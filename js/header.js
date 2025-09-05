@@ -2,7 +2,7 @@ function initHeader() {
     /* PC/TABLET - 메뉴 hover 드롭 메뉴 */
     $('#projectMenu').hover(function() {
         $(this).parent().find('#projectMenuDrop').css('height', 'auto');
-        $(this).parent().find('#projectMenuDrop').stop().slideDown(400);
+        $(this).parent().find('#projectMenuDrop').stop().slideDown(1);
     }, function() {
         $('#projectMenuDrop').stop().slideUp(1);
     });
