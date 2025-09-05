@@ -340,7 +340,7 @@ body {
 }
 #header .box .mobile .mb_box .sub a {
 	display: block;
-  border-bottom: 1px solid #C1C1C1;
+  border-bottom: 1px solid #EBEBEB;
 	font-size: 1.3rem;
 	line-height: 130%;
 	transition: all .5s;
