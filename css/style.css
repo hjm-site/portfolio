@@ -545,11 +545,11 @@ body {
   margin-bottom: 1.5rem;
 }
 #main .sec2 .box .history .h_wrap .img .skill {
-	width: 10rem;
+	width: 9rem;
 	max-width: 26.6%;
 }
 #main .sec2 .box .history .h_wrap .img .skill.v2 {
-	width: 6rem;
+	width: 5rem;
 }
 
 /* ------------------------------------------------------------------------------------ */
@@ -685,6 +685,9 @@ body {
 	}
 	#main .sec2 .box .history .h_wrap.v2 {
 		width: 100%;
+	}
+	#main .sec2 .box .history .h_wrap .img.v2 {
+    margin-bottom: 1rem;
 	}
 }
 @media only screen and (max-width: 450px) {
