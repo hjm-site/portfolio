@@ -689,6 +689,12 @@ body {
 	#main .sec2 .box .history .h_wrap .img.v2 {
     margin-bottom: 1rem;
 	}
+	#main .sec2 .box .history .h_wrap .img .skill {
+    width: 7rem;
+	}
+	#main .sec2 .box .history .h_wrap .img .skill.v2 {
+    width: 4rem;
+	}
 }
 @media only screen and (max-width: 450px) {
 	/* [450px] 초기화 */
