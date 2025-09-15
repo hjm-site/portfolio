@@ -1,25 +1,31 @@
 /* 폰트 */
 @font-face {
-  font-family:'pl_L';
-  src: url('../font/Paperlogy-Light.ttf') format('truetype');
+  font-family:'ptd_R';
+  src: url('../font/Pretendard-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family:'pl_M';
-  src: url('../font/Paperlogy-Medium.ttf') format('truetype');
+  font-family:'ptd_L';
+  src: url('../font/Pretendard-Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family:'pl_B';
-  src: url('../font/Paperlogy-Bold.ttf') format('truetype');
+  font-family:'ptd_M';
+  src: url('../font/Pretendard-Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family:'pl_Bk';
-  src: url('../font/Paperlogy-Black.ttf') format('truetype');
+  font-family:'ptd_B';
+  src: url('../font/Pretendard-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:'ptd_Bk';
+  src: url('../font/Pretendard-Black.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -103,7 +109,7 @@ p {
 html {
   width: 100%;
   height: 100%;
-  font-family: 'pl_M';
+  font-family: 'ptd_M';
 	font-size: 16px;
 	word-break: keep-all;
 }
@@ -134,14 +140,14 @@ body {
 	box-sizing: border-box;
 	background-color: #644196dc;
 	border-radius: 5px;
-  font-family: 'pl_B';
+  font-family: 'ptd_B';
 	font-size: 2rem;
 	color: #FFF;
 	padding: 0.8rem 1.5rem;
   margin-bottom: 1rem;
 }
 #bykids .box .title2 {
-  font-family: 'pl_B';
+  font-family: 'ptd_B';
 	font-size: 2rem;
 	color: #654196;
   margin-bottom: 2rem;
