@@ -166,16 +166,16 @@ body {
 #bykids .box .video_con .wrap .vs {
 	width: fit-content;
 	box-sizing: border-box;
-	border-radius: 5px;
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 	font-size: 1.4rem;
 	color: #555;
+	text-decoration: underline;
+	text-underline-offset: 4px;
 	padding: 0.5rem 0.8rem;
 }
 #bykids .box .video_con .wrap .video {
 	width: 50rem;
 	max-width: 100%;
-	border: 5px solid #000;
+	border: 5px solid #FFF;
 	border-radius: 20px;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
