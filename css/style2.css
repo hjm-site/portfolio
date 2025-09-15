@@ -1,0 +1,234 @@
+/* 폰트 */
+@font-face {
+  font-family:'pl_L';
+  src: url('../font/Paperlogy-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:'pl_M';
+  src: url('../font/Paperlogy-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:'pl_B';
+  src: url('../font/Paperlogy-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family:'pl_Bk';
+  src: url('../font/Paperlogy-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* 마우스 드래그 */
+::-moz-selection {
+  background-color: #654196;
+  color: #FFF;
+}
+::selection {
+  background-color: #654196;
+  color: #FFF;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* 초기화 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+li, ol, ul {
+	list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+	transition: all .5s;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input, button, textarea, select {
+  outline: none;
+}
+select {
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+}
+button {
+	background-color: unset;
+	border: unset;
+	color: #000;
+	cursor: pointer;
+	transition: all .5s;
+}
+img {
+	transition: all .5s;
+}
+p {
+	word-break: keep-all;
+}
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'pl_M';
+	font-size: 16px;
+	word-break: keep-all;
+}
+body {
+  width: 100%;
+}
+
+/* ------------------------------------ */
+/* [공통] 바이키즈 - 메인 */
+/* 2023.03.02(index_20230302.html) */
+#bykids {
+	width: 100%;
+	box-sizing: border-box;
+	background-color: #FFF;
+	padding: 4rem 3rem;
+}
+#bykids .box {
+	width: 100%;
+	max-width: 1400px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+}
+#bykids .box .title1 {
+	box-sizing: border-box;
+	background-color: #644196dc;
+	border-radius: 5px;
+  font-family: 'pl_B';
+	font-size: 2rem;
+	color: #FFF;
+	padding: 0.8rem 1.5rem;
+  margin-bottom: 1rem;
+}
+#bykids .box .title2 {
+  font-family: 'pl_B';
+	font-size: 2rem;
+	color: #654196;
+  margin-bottom: 2rem;
+}
+#bykids .box .video_con {
+	display: flex;
+	flex-direction: column;
+	row-gap: 3rem;
+}
+#bykids .box .video_con .wrap {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1rem;
+  margin: 0 auto;
+}
+#bykids .box .video_con .wrap .vs {
+	width: fit-content;
+	box-sizing: border-box;
+	border-radius: 5px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	font-size: 1.5rem;
+	color: #555;
+	padding: 0.5rem 0.8rem;
+}
+#bykids .box .video_con .wrap .video {
+	width: 50rem;
+	max-width: 100%;
+	border: 5px solid #000;
+	border-radius: 20px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+#bykids .box .video_con .wrap .video.v2 {
+  width: 40rem;
+}
+#bykids .box .video_con .wrap .video.v3 {
+  width: 20rem;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* 반응형 */
+/* PC 기준 */
+@media only screen and (max-width: 1600px) {
+	/* [1600px] 초기화 */
+	html {
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width: 1400px) {
+	/* [1400px] 초기화 */
+	html {
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width: 1280px) {
+	/* [1280px] 초기화 */
+	html {
+		font-size: 13px;
+	}
+}
+/* TABLET 기준 */
+@media only screen and (max-width: 1023px) {
+	/* [1023px] 초기화 */
+	html {
+		font-size: 12px;
+	}
+}
+/* MOBILE 기준 */
+@media only screen and (max-width: 767px) {
+	/* [767px] 초기화 */
+	html {
+		font-size: 11px;
+	}
+
+	/* ------------------------------------ */
+	/* [767px] [공통] 바이키즈 - 메인 */
+	/* [767px] 2023.03.02(index_20230302.html) */
+	#bykids {
+		padding: 4rem 2rem;
+	}
+	#bykids .box .video_con .wrap .video {
+		border: 3px solid #000;
+		border-radius: 10px;
+	}
+}
+@media only screen and (max-width: 450px) {
+	/* [450px] 초기화 */
+	html {
+		font-size: 10px;
+	}
+}
