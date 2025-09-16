@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>현정민의 포트폴리오</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta property="og:title" content="현정민의 포트폴리오">
+    <meta property="og:description" content="실제 프로젝트 작업 모음">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../img/meta_logo.png">
+    <meta property="og:site_name" content="현정민의 포트폴리오">
+    <meta property="og:url" content="index_20230302.html">
+
+    <!-- favicon.ico 연결 -->
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <!-- style -->
+    <link rel="stylesheet" href="../css/style2.css">
+
+    <!-- jquery -->
+    <script src="../js/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <div id="bykids">
+      <div class="box">
+        <div class="title1">바이키즈 [메인]</div>
+        <div class="title2">스승의 날 강사님 칭찬 이벤트</div>
+        <div class="video_con">
+          <div class="wrap">
+            <div class="vs">PC</div>
+            <video id="pcVideo" class="video" controlslist="nodownload" playsinline controls autoplay muted loop>
+              <source src="../video/20230515_pc.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="wrap">
+            <div class="vs">Tablet</div>
+            <video id="tabletVideo" class="video v2" controlslist="nodownload" playsinline controls autoplay muted loop>
+              <source src="../video/20230515_tablet.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="wrap">
+            <div class="vs">Mobile</div>
+            <video id="mobileVideo" class="video v3" controlslist="nodownload" playsinline controls autoplay muted loop>
+              <source src="../video/20230515_mobile.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function() {
+        /* 영상 로드(로드 안하면 모바일에서 영상 안보임) */
+        /* PC 동영상 */
+        var pc = $('#pcVideo')[0];
+        pc.load();
+        /* TABLET 동영상 */
+        var tablet = $('#tabletVideo')[0];
+        tablet.load();
+        /* MOBILE 동영상 */
+        var mobile = $('#mobileVideo')[0];
+        mobile.load();
+      });
+    </script>
+  </body>
+</html>
