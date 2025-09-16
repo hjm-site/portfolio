@@ -167,8 +167,6 @@ body {
 	box-sizing: border-box;
 	font-size: 1.4rem;
 	color: #555;
-	text-decoration: underline;
-	text-underline-offset: 4px;
 }
 #bykids .box .video_con .wrap .video {
 	width: 35rem;
