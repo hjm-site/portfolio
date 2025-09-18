@@ -118,39 +118,49 @@ body {
 }
 
 /* ------------------------------------ */
-/* [공통] 바이키즈 - 메인 */
-/* 2023.03.02(index_20230302.html) */
+/* [공통] bykids 폴더 */
 #bykids {
 	width: 100%;
+  min-height: 100vh;
 	box-sizing: border-box;
-	background-color: #FFF;
-	padding: 4rem 3rem;
+	background-color: #FAF6FF;
+	padding: 3rem;
 }
 #bykids .box {
 	width: 100%;
 	max-width: 1600px;
 	box-sizing: border-box;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	margin: 0 auto;
 }
-#bykids .box .title1 {
-	box-sizing: border-box;
-	background-color: #644196dc;
-	border-radius: 5px;
-  font-family: 'ptd_B';
-	font-size: 2rem;
-	color: #FFF;
-	padding: 0.8rem 1.5rem;
-  margin-bottom: 1rem;
+#bykids .box .title {
+	display: flex;
+	align-items: center;
+	column-gap: 1rem;
+	margin-bottom: 2rem;
 }
-#bykids .box .title2 {
-  font-family: 'ptd_B';
-	font-size: 2rem;
-	color: #654196;
-  margin-bottom: 2rem;
+#bykids .box .title .logo {
+  width: 10rem;
+}
+#bykids .box .title .txt {
+	box-sizing: border-box;
+	font-family: 'ptd_B';
+	font-size: 1.8rem;
+	color: #4B4B4B;
+}
+#bykids .box .page {
+	font-family: 'ptd_B';
+	font-size: 1.6rem;
+	margin-bottom: 1rem;
+}
+#bykids .box .event {
+	width: fit-content;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background-color: #7650AA;
+	font-size: 1.4rem;
+	color: #FFF;
+	padding: 0.5rem 1rem;
+	margin-bottom: 1.5rem;
 }
 #bykids .box .video_con {
 	display: flex;
@@ -160,26 +170,34 @@ body {
 	display: flex;
 	flex-direction: column;
   align-items: center;
-	row-gap: 0.5rem;
+	row-gap: 0.3rem;
 }
 #bykids .box .video_con .wrap .vs {
-	width: fit-content;
+	width: 100%;
 	box-sizing: border-box;
-	font-size: 1.4rem;
-	color: #555;
+	background-color: rgba(255, 255, 255, 0.4);
+	border: 1px solid #7650AA;
+	border-radius: 5px;
+	font-family: 'ptd_R';
+	font-size: 1.3rem;
+	color: #7650AA;
+	text-align: center;
+	padding: 0.3rem 0.5rem;
 }
 #bykids .box .video_con .wrap .video {
-	width: 35rem;
 	max-width: 100%;
 	border: 5px solid #FFF;
-	border-radius: 20px;
+	border-radius: 10px;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
+#bykids .box .video_con .wrap .video.v1 {
+	width: 42rem;
+}
 #bykids .box .video_con .wrap .video.v2 {
-  width: 30rem;
+  width: 34rem;
 }
 #bykids .box .video_con .wrap .video.v3 {
-  width: 15rem;
+  width: 18rem;
 }
 
 /* ------------------------------------------------------------------------------------ */
@@ -218,18 +236,35 @@ body {
 	}
 
 	/* ------------------------------------ */
-	/* [767px] [공통] 바이키즈 - 메인 */
-	/* [767px] 2023.03.02(index_20230302.html) */
+/* [공통] bykids 폴더 */
 	#bykids {
-		padding: 4rem 2rem;
+		padding: 2rem;
 	}
 	#bykids .box .video_con {
 		flex-direction: column;
 		row-gap: 2rem;
 	}
+	#bykids .box .video_con .wrap .vs {
+		max-width: 100%;
+	}
+	#bykids .box .video_con .wrap .vs.v1 {
+		width: 42rem;
+	}
+	#bykids .box .video_con .wrap .vs.v2 {
+		width: 42rem;
+	}
+	#bykids .box .video_con .wrap .vs.v3 {
+		width: 21rem;
+	}
 	#bykids .box .video_con .wrap .video {
 		border: 3px solid #FFF;
 		border-radius: 10px;
+	}
+	#bykids .box .video_con .wrap .video.v2 {
+		width: 42rem;
+	}
+	#bykids .box .video_con .wrap .video.v3 {
+		width: 21rem;
 	}
 }
 @media only screen and (max-width: 450px) {
