@@ -34,15 +34,12 @@
           <div class="txt">로보영어 학습</div>
         </div>
         <div class="event v2">전체 작업 페이지</div>
-        <!-- <div class="comment">※ 이미지 hover 후 클릭하면 해당 페이지로 이동합니다.</div> -->
-        
-        
         <div class="swiper pageSwiper">
           <div class="top">
-            <div class="comment">※ 이미지 hover 후 클릭하면 해당 페이지로 이동합니다.</div>
+            <div class="comment">※ 이미지 hover 후 클릭하면 해당 테스트 페이지로 이동합니다.</div>
             <div class="function">
               <div class="pagination"></div>
-              <div class="swiperbtn">
+              <div class="swiperbtn v1">
                 <div class="swiper-button-prev s_btn"></div>
                 <div class="swiper-button-next s_btn"></div>
               </div>
@@ -454,7 +451,6 @@
                 </div>
               </div>
             </div>
-            
             <div class="swiper-slide">
               <div class="page_con">
                 <div class="wrap">
@@ -1489,7 +1485,7 @@
                       </div>
                       <div class="in">
                         <div class="txt2">기능 :&nbsp;</div>
-                        <div class="txt3">팝업 제어, 교재 swiper, 학습 리포트의 Day swiper, 동영상 팝업 제어</div>
+                        <div class="txt3">팝업 제어, swiper(교재, 학습 리포트의 Day), 동영상 팝업 제어</div>
                       </div>
                     </div>
                   </div>
@@ -1755,6 +1751,7 @@
         </div>
       </div>
     </div>
+
     <script>
       $(document).ready(function() {
         /* swiper */
@@ -1764,6 +1761,8 @@
           speed: 1000,
           centeredSlides : true,
           loop: true,
+          simulateTouch: true,
+          touchStartPreventDefault: false,
           navigation: {
             nextEl: '.pageSwiper .swiper-button-next',
             prevEl: '.pageSwiper .swiper-button-prev'

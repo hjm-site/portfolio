@@ -48,6 +48,14 @@
   background-color: #274D95;
   color: #FFF;
 }
+.roboHome::-moz-selection {
+  background-color: #F2B610;
+  color: #FFF;
+}
+.roboHome::selection {
+  background-color: #F2B610;
+  color: #FFF;
+}
 
 /* ------------------------------------------------------------------------------------ */
 /* 초기화 */
@@ -162,6 +170,9 @@ body {
 .event.v2 {
 	background-color: #355FAE;
 }
+.event.v3 {
+  background-color: #FFBF13;
+}
 .comment {
 	font-family: 'ptd_R';
 	font-size: 1rem;
@@ -205,24 +216,29 @@ body {
   width: 18rem;
 }
 .page_con {
+	box-sizing: border-box;
 	display: flex;
 	flex-wrap: wrap;
 	column-gap: 1.5%;
 	row-gap: 1.5rem;
+	padding: 2px;
 }
 .page_con .wrap {
 	width: 18.8%;
 	box-sizing: border-box;
+	position: relative;
   background-color: rgba(255, 255, 255, 0.9);
 	border-radius: 10px;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 .page_con .wrap .link {
 	width: 100%;
+  min-height: 9rem;
 	box-sizing: border-box;
 	display: flex;
   position: relative;
 	border-radius: 10px 10px 0 0;
+  box-shadow: 0 5px 5px -5px #C6C6C6;
 	overflow: hidden;
 }
 .page_con .wrap .link .img {
@@ -252,6 +268,7 @@ body {
 	box-sizing: border-box;
 	border-radius: 0 0 10px 10px;
 	padding: 1rem;
+  margin-bottom: 3rem;
 }
 .page_con .wrap .txts .explain {
 	display: flex;
@@ -265,8 +282,13 @@ body {
 .page_con .wrap .txts .txt1 {
 	font-family: 'ptd_B';
 	font-size: 1.1rem;
-	color: #355FAE;
 	margin-bottom: 0.5rem;
+}
+#roboStudy .page_con .wrap .txts .txt1 {
+    color: #355FAE;
+}
+#roboHome .page_con .wrap .txts .txt1 {
+    color: #FF9500;
 }
 .page_con .wrap .txts .txt2 {
 	font-size: 1rem;
@@ -274,6 +296,21 @@ body {
 .page_con .wrap .txts .txt3 {
 	font-size: 1rem;
 	color: #4B4B4B;
+}
+.page_con .wrap .address {
+	width: fit-content;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 1rem;
+	right: 1rem;
+	background-color: #FFE295;
+	border-radius: 4px;
+	font-size: 1rem;
+	padding: 0.4rem 0.8rem;
+	margin-left: auto;
 }
 
 /* ------------------------------------ */
@@ -283,7 +320,8 @@ body {
 	justify-content: space-between;
 	align-items: flex-end;
 	flex-wrap: wrap;
-	row-gap: 1rem;
+  column-gap: 1rem;
+	row-gap: 0.2rem;
 	margin-bottom: 0.5rem;
 }
 .swiper .function {
@@ -317,11 +355,17 @@ body {
 .swiper .swiperbtn .s_btn:after {
   content: unset;
 }
-.swiper .swiperbtn .swiper-button-prev {
-  background-image: url('../img/btn_prev.svg');
+.swiper .swiperbtn.v1 .swiper-button-prev {
+  background-image: url('../img/robo_study/btn_prev.svg');
 }
-.swiper .swiperbtn .swiper-button-next {
-  background-image: url('../img/btn_next.svg');
+.swiper .swiperbtn.v1 .swiper-button-next {
+  background-image: url('../img/robo_study/btn_next.svg');
+}
+.swiper .swiperbtn.v2 .swiper-button-prev {
+  background-image: url('../img/robo_home/btn_prev.svg');
+}
+.swiper .swiperbtn.v2 .swiper-button-next {
+  background-image: url('../img/robo_home/btn_next.svg');
 }
 
 /* ------------------------------------ */
@@ -356,7 +400,21 @@ body {
 	margin: 0 auto;
 }
 
-/* 로보영어 홈페이지 배경 색상 : #FFFAE7 */
+/* ------------------------------------ */
+/* [공통] roboHome 폴더 */
+#roboHome {
+	width: 100%;
+  min-height: 100vh;
+	box-sizing: border-box;
+	background-color: #FFFAE7;
+	padding: 3rem;
+}
+#roboHome .box {
+	width: 100%;
+	max-width: 1600px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
 
 /* ------------------------------------------------------------------------------------ */
 /* 마우스 hover PC 버전만 적용 */
@@ -371,16 +429,29 @@ body {
 		opacity: 1;
 		visibility: visible;
 	}
+	/* 운영 페이지 링크 버튼 - 배경 색상 변경 */
+	.page_con .wrap .address:hover {
+		background-color: #FFB900;
+		color: #FFF;
+	}
 
 	/* ------------------------------------ */
 	/* [공통] swiper */
-	/* swiper 이전 버튼 - 배경 이미지 변경 */
-	.swiper .swiperbtn .swiper-button-prev:hover {
-		background-image: url('../img/btn_prev_hover.svg');
+	/* swiper 이전 버튼(버전1) - 배경 이미지 변경 */
+	.swiper .swiperbtn.v1 .swiper-button-prev:hover {
+		background-image: url('../img/robo_study/btn_prev_hover.svg');
 	}
-	/* swiper 다음 버튼 - 배경 이미지 변경 */
-	.swiper .swiperbtn .swiper-button-next:hover {
-		background-image: url('../img/btn_next_hover.svg');
+	/* swiper 다음 버튼(버전1) - 배경 이미지 변경 */
+	.swiper .swiperbtn.v1 .swiper-button-next:hover {
+		background-image: url('../img/robo_study/btn_next_hover.svg');
+	}
+	/* swiper 이전 버튼(버전2) - 배경 이미지 변경 */
+	.swiper .swiperbtn.v2 .swiper-button-prev:hover {
+		background-image: url('../img/robo_home/btn_prev_hover.svg');
+	}
+	/* swiper 다음 버튼(버전2) - 배경 이미지 변경 */
+	.swiper .swiperbtn.v2 .swiper-button-next:hover {
+		background-image: url('../img/robo_home/btn_next_hover.svg');
 	}
 }
 /* ------------------------------------------------------------------------------------ */
@@ -409,6 +480,9 @@ body {
 	.page_con .wrap {
 		width: 23.875%;
 	}
+	.page_con .wrap .link {
+		min-height: 11rem;
+	}
 }
 /* TABLET 기준 */
 @media only screen and (max-width: 1023px) {
@@ -421,6 +495,9 @@ body {
 	/* [1023px] [공통] */
 	.page_con .wrap {
 		width: 32.3%;
+	}
+	.page_con .wrap .link {
+		min-height: 12rem;
 	}
 }
 /* MOBILE 기준 */
@@ -464,6 +541,9 @@ body {
 	.page_con .wrap {
 		width: 49%;
 	}
+	.page_con .wrap .link {
+		min-height: 14rem;
+	}
 
 	/* ------------------------------------ */
 	/* [공통] bykids 폴더 */
@@ -477,9 +557,33 @@ body {
 		padding: 2rem;
 	}
 }
+@media only screen and (max-width: 600px) {
+	/* [600px] [공통] */
+	.page_con .wrap .link {
+		min-height: 12rem;
+	}
+}
+@media only screen and (max-width: 500px) {
+	/* [500px] [공통] */
+	.page_con .wrap .link {
+		min-height: 10rem;
+	}
+
+	/* ------------------------------------ */
+	/* [500px] [공통] swiper */
+	.swiper .function {
+  	width: 100%;
+	}
+}
 @media only screen and (max-width: 450px) {
 	/* [450px] 초기화 */
 	html {
 		font-size: 10px;
+	}
+}
+@media only screen and (max-width: 400px) {
+	/* [400px] [공통] */
+	.page_con .wrap .link {
+		min-height: 8rem;
 	}
 }
