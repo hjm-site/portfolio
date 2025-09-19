@@ -142,7 +142,7 @@ body {
 	margin-bottom: 2rem;
 }
 .title .logo {
-  width: 10rem;
+  width: 8rem;
 }
 .title .txt {
 	box-sizing: border-box;
@@ -565,6 +565,9 @@ body {
 }
 @media only screen and (max-width: 500px) {
 	/* [500px] [공통] */
+	.title .logo {
+		width: 6rem;
+	}
 	.page_con .wrap .link {
 		min-height: 10rem;
 	}
