@@ -56,6 +56,14 @@
   background-color: #F2B610;
   color: #FFF;
 }
+.vicon::-moz-selection {
+  background-color: #EF71AD;
+  color: #FFF;
+}
+.vicon::selection {
+  background-color: #EF71AD;
+  color: #FFF;
+}
 
 /* ------------------------------------------------------------------------------------ */
 /* 초기화 */
@@ -186,19 +194,21 @@ body {
 	display: flex;
 	flex-direction: column;
   align-items: center;
-	row-gap: 0.3rem;
+	row-gap: 0.5rem;
 }
 .video_con .wrap .vs {
 	width: 100%;
 	box-sizing: border-box;
 	background-color: rgba(255, 255, 255, 0.4);
-	border: 1px solid #7650AA;
 	border-radius: 5px;
 	font-family: 'ptd_R';
 	font-size: 1.3rem;
-	color: #7650AA;
 	text-align: center;
 	padding: 0.3rem 0.5rem;
+}
+#bykids .video_con .wrap .vs {
+	border: 1px solid #7650AA;
+	color: #7650AA;
 }
 .video_con .wrap .video {
 	max-width: 100%;
@@ -312,6 +322,46 @@ body {
 	padding: 0.4rem 0.8rem;
 	margin-left: auto;
 }
+.image_con {
+	display: flex;
+	column-gap: 3%;
+}
+.image_con .wrap {
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+	row-gap: 0.5rem;
+}
+.image_con .wrap .vs {
+	width: 100%;
+	box-sizing: border-box;
+	background-color: rgba(255, 255, 255, 0.4);
+	border-radius: 5px;
+	font-family: 'ptd_R';
+	font-size: 1.3rem;
+	text-align: center;
+	padding: 0.3rem 0.5rem;
+}
+#vicon .image_con .wrap .vs {
+	border: 1px solid #CA166D;
+	color: #CA166D;
+}
+.image_con .wrap.v1 {
+	width: 44%;
+}
+.image_con .wrap.v2 {
+	width: 32%;
+}
+.image_con .wrap.v3 {
+	width: 18%;
+}
+.image_con .wrap .img {
+	width: 100%;
+	box-sizing: border-box;
+	border: 5px solid #FFF;
+	border-radius: 10px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
 
 /* ------------------------------------ */
 /* [공통] swiper */
@@ -416,6 +466,22 @@ body {
 	margin: 0 auto;
 }
 
+/* ------------------------------------ */
+/* [공통] vicon 폴더 */
+#vicon {
+	width: 100%;
+  min-height: 100vh;
+	box-sizing: border-box;
+	background-color: #FFF9FC;
+	padding: 3rem;
+}
+#vicon .box {
+	width: 100%;
+	max-width: 1600px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
 /* ------------------------------------------------------------------------------------ */
 /* 마우스 hover PC 버전만 적용 */
 @media (hover: hover) {
@@ -508,7 +574,7 @@ body {
 	}
 
 	/* ------------------------------------ */
-	/* [공통] */
+	/* [767px] [공통] */
 	.video_con {
 		flex-direction: column;
 		row-gap: 2rem;
@@ -527,7 +593,7 @@ body {
 	}
 	.video_con .wrap .video {
 		border: 3px solid #FFF;
-		border-radius: 10px;
+		border-radius: 5px;
 	}
 	.video_con .wrap .video.v2 {
 		width: 42rem;
@@ -544,15 +610,37 @@ body {
 	.page_con .wrap .link {
 		min-height: 14rem;
 	}
+	.image_con {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		row-gap: 2rem;
+	}
+	.image_con .wrap {
+		max-width: 100%;
+	}
+	.image_con .wrap.v1 {
+		width: 46rem;
+	}
+	.image_con .wrap.v2 {
+		width: 46rem;
+	}
+	.image_con .wrap.v3 {
+		width: 23rem;
+	}
+	.image_con .wrap .img {
+		border: 3px solid #FFF;
+		border-radius: 5px;
+	}
 
 	/* ------------------------------------ */
-	/* [공통] bykids 폴더 */
+	/* [767px] [공통] bykids 폴더 */
 	#bykids {
 		padding: 2rem;
 	}
 
 	/* ------------------------------------ */
-	/* [공통] roboStudy 폴더 */
+	/* [767px] [공통] roboStudy 폴더 */
 	#roboStudy {
 		padding: 2rem;
 	}
