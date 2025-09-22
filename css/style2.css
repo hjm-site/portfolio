@@ -179,12 +179,15 @@ body {
 	background-color: #355FAE;
 }
 .event.v3 {
-  background-color: #FFBF13;
+	background-color: #567AE7;
 }
+/* .event.v3 { 
+  background-color: #FFBF13;
+}*/
 .comment {
 	font-family: 'ptd_R';
 	font-size: 1rem;
-	color: #EE0A0A;
+	color: #E32741;
 }
 .video_con {
 	display: flex;
@@ -240,6 +243,9 @@ body {
   background-color: rgba(255, 255, 255, 0.9);
 	border-radius: 10px;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.page_con .wrap.v2 {
+	width: 32.3%;
 }
 .page_con .wrap .link {
 	width: 100%;
@@ -406,17 +412,23 @@ body {
   content: unset;
 }
 .swiper .swiperbtn.v1 .swiper-button-prev {
-  background-image: url('../img/robo_study/btn_prev.svg');
+  background-image: url('../img/robo_evaluation/btn_prev.svg');
 }
 .swiper .swiperbtn.v1 .swiper-button-next {
-  background-image: url('../img/robo_study/btn_next.svg');
+  background-image: url('../img/robo_evaluation/btn_next.svg');
 }
 .swiper .swiperbtn.v2 .swiper-button-prev {
+  background-image: url('../img/robo_evaluation/btn_prev.svg');
+}
+.swiper .swiperbtn.v2 .swiper-button-next {
+  background-image: url('../img/robo_evaluation/btn_next.svg');
+}
+ /* .swiper .swiperbtn.v2 .swiper-button-prev {
   background-image: url('../img/robo_home/btn_prev.svg');
 }
 .swiper .swiperbtn.v2 .swiper-button-next {
   background-image: url('../img/robo_home/btn_next.svg');
-}
+} */
 
 /* ------------------------------------ */
 /* [공통] bykids 폴더 */
@@ -444,6 +456,22 @@ body {
 	padding: 3rem;
 }
 #roboStudy .box {
+	width: 100%;
+	max-width: 1600px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+/* ------------------------------------ */
+/* [공통] roboEvaluation 폴더 */
+#roboEvaluation {
+	width: 100%;
+  min-height: 100vh;
+	box-sizing: border-box;
+	background-color: #EDF1FF;
+	padding: 3rem;
+}
+#roboEvaluation .box {
 	width: 100%;
 	max-width: 1600px;
 	box-sizing: border-box;
@@ -513,12 +541,20 @@ body {
 	}
 	/* swiper 이전 버튼(버전2) - 배경 이미지 변경 */
 	.swiper .swiperbtn.v2 .swiper-button-prev:hover {
-		background-image: url('../img/robo_home/btn_prev_hover.svg');
+		background-image: url('../img/robo_evaluation/btn_prev_hover.svg');
 	}
 	/* swiper 다음 버튼(버전2) - 배경 이미지 변경 */
 	.swiper .swiperbtn.v2 .swiper-button-next:hover {
-		background-image: url('../img/robo_home/btn_next_hover.svg');
+		background-image: url('../img/robo_evaluation/btn_next_hover.svg');
 	}
+	/* swiper 이전 버튼(버전2) - 배경 이미지 변경 */
+	/*.swiper .swiperbtn.v2 .swiper-button-prev:hover {
+		background-image: url('../img/robo_home/btn_prev_hover.svg');
+	}*/
+	/* swiper 다음 버튼(버전2) - 배경 이미지 변경 */
+	/*.swiper .swiperbtn.v2 .swiper-button-next:hover {
+		background-image: url('../img/robo_home/btn_next_hover.svg');
+	}*/
 }
 /* ------------------------------------------------------------------------------------ */
 /* 반응형 */
@@ -607,6 +643,9 @@ body {
 	.page_con .wrap {
 		width: 49%;
 	}
+.page_con .wrap.v2 {
+	width: 49%;
+}
 	.page_con .wrap .link {
 		min-height: 14rem;
 	}
