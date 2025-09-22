@@ -273,6 +273,9 @@ body {
   box-shadow: 0 5px 5px -5px #C6C6C6;
 	overflow: hidden;
 }
+.page_con .wrap.v3 .link {
+	min-height: 12rem;
+}
 .page_con .wrap .link .img {
 	width: 100%;
 	object-fit: cover;
@@ -674,6 +677,9 @@ body {
 	.page_con .wrap .link {
 		min-height: 14rem;
 	}
+	.page_con .wrap.v3 .link {
+    min-height: 14rem;
+	}
 	.image_con {
 		flex-direction: column;
 		justify-content: center;
@@ -714,6 +720,9 @@ body {
 	.page_con .wrap .link {
 		min-height: 12rem;
 	}
+	.page_con .wrap.v3 .link {
+		min-height: 12rem;
+	}
 }
 @media only screen and (max-width: 500px) {
 	/* [500px] [공통] */
@@ -721,6 +730,9 @@ body {
 		width: 6rem;
 	}
 	.page_con .wrap .link {
+		min-height: 10rem;
+	}
+	.page_con .wrap.v3 .link {
 		min-height: 10rem;
 	}
 
@@ -739,6 +751,9 @@ body {
 @media only screen and (max-width: 400px) {
 	/* [400px] [공통] */
 	.page_con .wrap .link {
+		min-height: 8rem;
+	}
+	.page_con .wrap.v3 .link {
 		min-height: 8rem;
 	}
 }
