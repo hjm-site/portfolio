@@ -32,22 +32,38 @@
 
 /* ------------------------------------------------------------------------------------ */
 /* 마우스 드래그 */
+/* 바이키즈 */
 .bykids::-moz-selection {
-  background-color: #654196;
+  background-color: #7650AA;
   color: #FFF;
 }
 .bykids::selection {
-  background-color: #654196;
+  background-color: #7650AA;
   color: #FFF;
 }
+/* 로보영어 학습 */
 .roboStudy::-moz-selection {
-  background-color: #274D95;
+  background-color: #355FAE;
   color: #FFF;
 }
 .roboStudy::selection {
-  background-color: #274D95;
+  background-color: #355FAE;
   color: #FFF;
 }
+/* 로보영어 레벨테스트 평가지 */
+.roboEvaluation::-moz-selection {
+  background-color: #567AE7;
+  color: #FFF;
+}
+.roboEvaluation::selection {
+  background-color: #567AE7;
+  color: #FFF;
+}
+
+
+
+
+
 .roboHome::-moz-selection {
   background-color: #F2B610;
   color: #FFF;
