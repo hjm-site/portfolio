@@ -68,7 +68,7 @@
   background-color: #FFBF13;
   color: #FFF;
 }
-
+/* 비콘 */
 .vicon::-moz-selection {
   background-color: #EF71AD;
   color: #FFF;
@@ -179,23 +179,32 @@ body {
 .event {
 	width: fit-content;
 	box-sizing: border-box;
+	background-color: #000;
 	border-radius: 5px;
 	font-size: 1.3rem;
 	color: #FFF;
 	padding: 0.5rem 1rem;
 	margin-bottom: 1.5rem;
 }
-.event.v1 {
+/* 바이키즈 */
+#bykids .event {
 	background-color: #7650AA;
 }
-.event.v2 {
+/* 로보영어 학습 */
+#roboStudy .event {
 	background-color: #355FAE;
 }
-.event.v3 {
+/* 로보영어 레벨테스트 평가지 */
+#roboEvaluation .event {
 	background-color: #567AE7;
 }
-.event.v4 { 
+/* 로보영어 홈페이지 */
+#roboHome .event { 
   background-color: #FFBF13;
+}
+/* 비콘 */
+#vicon .event { 
+  background-color: #EF71AD;
 }
 .comment {
 	font-family: 'ptd_R';
@@ -216,6 +225,7 @@ body {
 	width: 100%;
 	box-sizing: border-box;
 	background-color: rgba(255, 255, 255, 0.4);
+	border: 1px solid #000;
 	border-radius: 5px;
 	font-family: 'ptd_R';
 	font-size: 1.3rem;
@@ -319,14 +329,21 @@ body {
 	font-size: 1.1rem;
 	margin-bottom: 0.5rem;
 }
+/* 로보영어 학습 */
 #roboStudy .page_con .wrap .txts .txt1 {
-    color: #355FAE;
+  color: #355FAE;
 }
+/* 로보영어 레벨테스트 평가지 */
 #roboEvaluation .page_con .wrap .txts .txt1 {
-    color: #567AE7;
+  color: #567AE7;
 }
+/* 로보영어 홈페이지 */
 #roboHome .page_con .wrap .txts .txt1 {
-    color: #FFBF13;
+  color: #FFBF13;
+}
+/* 비콘 */
+#vicon .page_con .wrap .txts .txt1 {
+  color: #EF71AD;
 }
 .page_con .wrap .txts .txt2 {
 	font-size: 1rem;
@@ -344,11 +361,14 @@ body {
 	position: absolute;
 	bottom: 1rem;
 	right: 1rem;
-	background-color: #FFE295;
+	background-color: #FFF;
 	border-radius: 4px;
 	font-size: 1rem;
 	padding: 0.4rem 0.8rem;
 	margin-left: auto;
+}
+#roboHome .page_con .wrap .address {
+	background-color: #FFE295;
 }
 .image_con {
 	display: flex;
@@ -433,24 +453,35 @@ body {
 .swiper .swiperbtn .s_btn:after {
   content: unset;
 }
-.swiper .swiperbtn.v1 .swiper-button-prev {
+/* 로보영어 학습 */
+#roboStudy .swiper .swiperbtn .swiper-button-prev {
+  background-image: url('../img/robo_study/btn_prev.svg');
+}
+#roboStudy .swiper .swiperbtn .swiper-button-next {
+  background-image: url('../img/robo_study/btn_next.svg');
+}
+/* 로보영어 레벨테스트 평가지 */
+#roboEvaluation .swiper .swiperbtn .swiper-button-prev {
   background-image: url('../img/robo_evaluation/btn_prev.svg');
 }
-.swiper .swiperbtn.v1 .swiper-button-next {
+#roboEvaluation .swiper .swiperbtn .swiper-button-next {
   background-image: url('../img/robo_evaluation/btn_next.svg');
 }
-.swiper .swiperbtn.v2 .swiper-button-prev {
-  background-image: url('../img/robo_evaluation/btn_prev.svg');
-}
-.swiper .swiperbtn.v2 .swiper-button-next {
-  background-image: url('../img/robo_evaluation/btn_next.svg');
-}
-.swiper .swiperbtn.v3 .swiper-button-prev {
+/* 로보영어 홈페이지 */
+#roboHome .swiper .swiperbtn .swiper-button-prev {
   background-image: url('../img/robo_home/btn_prev.svg');
 }
-.swiper .swiperbtn.v3 .swiper-button-next {
+#roboHome .swiper .swiperbtn .swiper-button-next {
   background-image: url('../img/robo_home/btn_next.svg');
 }
+/* 비콘 */
+#vicon .swiper .swiperbtn .swiper-button-prev {
+  background-image: url('../img/vicon/btn_prev.svg');
+}
+#vicon .swiper .swiperbtn .swiper-button-next {
+  background-image: url('../img/vicon/btn_next.svg');
+}
+
 
 /* ------------------------------------ */
 /* [공통] bykids 폴더 */
@@ -546,36 +577,46 @@ body {
 		visibility: visible;
 	}
 	/* 운영 페이지 링크 버튼 - 배경 색상 변경 */
-	.page_con .wrap .address:hover {
+	#roboHome .page_con .wrap .address:hover {
 		background-color: #FFB900;
 		color: #FFF;
 	}
 
 	/* ------------------------------------ */
 	/* [공통] swiper */
-	/* swiper 이전 버튼(버전1) - 배경 이미지 변경 */
-	.swiper .swiperbtn.v1 .swiper-button-prev:hover {
+	/* 로보영어 학습 */
+	/* swiper 이전 버튼 - 배경 이미지 변경 */
+	#roboStudy .swiper .swiperbtn .swiper-button-prev:hover {
 		background-image: url('../img/robo_study/btn_prev_hover.svg');
 	}
-	/* swiper 다음 버튼(버전1) - 배경 이미지 변경 */
-	.swiper .swiperbtn.v1 .swiper-button-next:hover {
+	/* swiper 다음 버튼 - 배경 이미지 변경 */
+	#roboStudy .swiper .swiperbtn .swiper-button-next:hover {
 		background-image: url('../img/robo_study/btn_next_hover.svg');
 	}
-	/* swiper 이전 버튼(버전2) - 배경 이미지 변경 */
-	.swiper .swiperbtn.v2 .swiper-button-prev:hover {
+	/* 로보영어 레벨테스트 평가지 */
+	/* swiper 이전 버튼 - 배경 이미지 변경 */
+	#roboEvaluation .swiper .swiperbtn .swiper-button-prev:hover {
 		background-image: url('../img/robo_evaluation/btn_prev_hover.svg');
 	}
-	/* swiper 다음 버튼(버전2) - 배경 이미지 변경 */
-	.swiper .swiperbtn.v2 .swiper-button-next:hover {
+	/* swiper 다음 버튼 - 배경 이미지 변경 */
+	#roboEvaluation .swiper .swiperbtn .swiper-button-next:hover {
 		background-image: url('../img/robo_evaluation/btn_next_hover.svg');
 	}
-	/* swiper 이전 버튼(버전3) - 배경 이미지 변경 */
-	.swiper .swiperbtn.v3 .swiper-button-prev:hover {
+	/* 로보영어 홈페이지 */
+	/* swiper 이전 버튼 - 배경 이미지 변경 */
+	#roboHome .swiper .swiperbtn .swiper-button-prev:hover {
 		background-image: url('../img/robo_home/btn_prev_hover.svg');
 	}
-	/* swiper 다음 버튼(버전3) - 배경 이미지 변경 */
-	.swiper .swiperbtn.v3 .swiper-button-next:hover {
+	/* swiper 다음 버튼 - 배경 이미지 변경 */
+	#roboHome .swiper .swiperbtn .swiper-button-next:hover {
 		background-image: url('../img/robo_home/btn_next_hover.svg');
+	}
+	/* 비콘 */
+	#vicon .swiper .swiperbtn .swiper-button-prev:hover {
+		background-image: url('../img/vicon/btn_prev_hover.svg');
+	}
+	#vicon .swiper .swiperbtn .swiper-button-next:hover {
+		background-image: url('../img/vicon/btn_next_hover.svg');
 	}
 }
 /* ------------------------------------------------------------------------------------ */
