@@ -77,6 +77,15 @@
   background-color: #EF71AD;
   color: #FFF;
 }
+/* 이에스리조트클럽 홈페이지 */
+.esresortclubHome::-moz-selection {
+  background-color: #258646;
+  color: #FFF;
+}
+.esresortclubHome::selection {
+  background-color: #258646;
+  color: #FFF;
+}
 
 /* ------------------------------------------------------------------------------------ */
 /* 초기화 */
@@ -205,6 +214,10 @@ body {
 /* 비콘 */
 #vicon .event { 
   background-color: #EF71AD;
+}
+/* 이에스리조트클럽 홈페이지 */
+#esresortclubHome .event { 
+  background-color: #258646;
 }
 .comment {
 	font-family: 'ptd_R';
@@ -345,6 +358,10 @@ body {
 #vicon .page_con .wrap .txts .txt1 {
   color: #EF71AD;
 }
+/* 이에스리조트클럽 홈페이지 */
+#esresortclubHome .page_con .wrap .txts .txt1 {
+  color: #258646;
+}
 .page_con .wrap .txts .txt2 {
 	font-size: 1rem;
 }
@@ -481,7 +498,13 @@ body {
 #vicon .swiper .swiperbtn .swiper-button-next {
   background-image: url('../img/vicon/btn_next.svg');
 }
-
+/* 이에스리조트클럽 홈페이지 */
+#esresortclubHome .swiper .swiperbtn .swiper-button-prev {
+  background-image: url('../img/esresortclub_home/btn_prev.svg');
+}
+#esresortclubHome .swiper .swiperbtn .swiper-button-next {
+  background-image: url('../img/esresortclub_home/btn_next.svg');
+}
 
 /* ------------------------------------ */
 /* [공통] bykids 폴더 */
@@ -563,6 +586,23 @@ body {
 	margin: 0 auto;
 }
 
+/* ------------------------------------ */
+/* [공통] esreosrtclubHome 폴더 */
+#esresortclubHome {
+	width: 100%;
+  min-height: 100vh;
+	box-sizing: border-box;
+	background-color: #f5fff8;
+	padding: 3rem;
+}
+#esresortclubHome .box {
+	width: 100%;
+	max-width: 1600px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+
 /* ------------------------------------------------------------------------------------ */
 /* 마우스 hover PC 버전만 적용 */
 @media (hover: hover) {
@@ -618,7 +658,15 @@ body {
 	#vicon .swiper .swiperbtn .swiper-button-next:hover {
 		background-image: url('../img/vicon/btn_next_hover.svg');
 	}
+	/* 이에스리조트클럽 홈페지 */
+	#esresortclubHome .swiper .swiperbtn .swiper-button-prev:hover {
+		background-image: url('../img/esresortclub_home/btn_prev_hover.svg');
+	}
+	#esresortclubHome .swiper .swiperbtn .swiper-button-next:hover {
+		background-image: url('../img/esresortclub_home/btn_next_hover.svg');
+	}
 }
+
 /* ------------------------------------------------------------------------------------ */
 /* 반응형 */
 /* PC 기준 */
