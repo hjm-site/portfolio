@@ -127,7 +127,7 @@
                   <img src="img/jquery.png" alt="skill" class="skill v2">
                   <img src="img/figma.png" alt="skill" class="skill v2">
                 </div>
-               </div>
+              </div>
             </div>
           </div>
         </div>
@@ -140,22 +140,40 @@
             <div class="c_wrap">
               <img src="img/logo_lport.png" alt="logo" class="logo">
               <div class="text">㈜엘포트</div>
-              <a href="lport.html" class="btn">바로가기</a>
+              <a href="javascript:;" id="lportWarning" class="btn">바로가기</a>
             </div>
             <div class="c_wrap">
               <img src="img/logo_vicon.png" alt="logo" class="logo">
               <div class="text">㈜비콘</div>
-              <a href="vicon.html" class="btn">바로가기</a>
+              <a href="javascript:;" id="viconWarning" class="btn">바로가기</a>
             </div>
             <div class="c_wrap">
               <img src="img/logo_esresortclub.png" alt="logo" class="logo">
               <div class="text">㈜이에스리조트클럽</div>
-              <a href="esresortclub.html" class="btn">바로가기</a>
+              <a href="javascript:;" id="esresortclubWarning" class="btn">바로가기</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <script>
+      $(document).ready(function() {
+        /* 안내 */
+        /* 엘포트 */
+        document.getElementById("lportWarning").addEventListener("click", function() {
+          alert("㈜엘포트\n준비 중입니다!");
+        });
+        /* 비콘 */
+        document.getElementById("viconWarning").addEventListener("click", function() {
+          alert("㈜비콘\n준비 중입니다!");
+        });
+        /* 이에스리조트클럽 */
+        document.getElementById("esresortclubWarning").addEventListener("click", function() {
+          alert("㈜이에스리조트클럽\n준비 중입니다!");
+        });
+      });
+    </script>
 
     <!-- 하단 -->
     <footer data-include-path="common/footer.html"></footer>

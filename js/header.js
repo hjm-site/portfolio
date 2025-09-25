@@ -29,4 +29,27 @@ function initHeader() {
         $(this).children('.arrow').toggleClass('up');
         $(this).siblings('.main').children('.arrow').removeClass('up');
     });
+
+    /* 안내 */
+    /* 엘포트 */
+    document.getElementById("lportWarning1").addEventListener("click", function() {
+        alert("㈜엘포트\n준비 중입니다!");
+    });
+    document.getElementById("lportWarning2").addEventListener("click", function() {
+        alert("㈜엘포트\n준비 중입니다!");
+    });
+    /* 비콘 */
+    document.getElementById("viconWarning1").addEventListener("click", function() {
+        alert("㈜비콘\n준비 중입니다!");
+    });
+    document.getElementById("viconWarning2").addEventListener("click", function() {
+        alert("㈜비콘\n준비 중입니다!");
+    });
+    /* 이에스리조트클럽 */
+    document.getElementById("esresortclubWarning1").addEventListener("click", function() {
+        alert("㈜이에스리조트클럽\n준비 중입니다!");
+    });
+    document.getElementById("esresortclubWarning2").addEventListener("click", function() {
+        alert("㈜이에스리조트클럽\n준비 중입니다!");
+    });
 }
