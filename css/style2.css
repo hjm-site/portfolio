@@ -68,6 +68,15 @@
   background-color: #FFBF13;
   color: #FFF;
 }
+/* 퍼스트위클리 */
+.firstWeekly::-moz-selection {
+  background-color: #455EA1;
+  color: #FFF;
+}
+.firstWeekly::selection {
+  background-color: #455EA1;
+  color: #FFF;
+}
 /* 비콘 */
 .vicon::-moz-selection {
   background-color: #EF71AD;
@@ -211,6 +220,10 @@ body {
 #roboHome .event { 
   background-color: #FFBF13;
 }
+/* 퍼스트위클리 */
+#firstWeekly .event { 
+  background-color: #455EA1;
+}
 /* 비콘 */
 #vicon .event { 
   background-color: #EF71AD;
@@ -219,6 +232,7 @@ body {
 #esresortclubHome .event { 
   background-color: #258646;
 }
+/* --- */
 .comment {
 	font-family: 'ptd_R';
 	font-size: 1rem;
@@ -245,10 +259,12 @@ body {
 	text-align: center;
 	padding: 0.3rem 0.5rem;
 }
+/* 바이키즈 */
 #bykids .video_con .wrap .vs {
 	border: 1px solid #7650AA;
 	color: #7650AA;
 }
+/* --- */
 .video_con .wrap .video {
 	max-width: 100%;
 	border: 5px solid #FFF;
@@ -354,6 +370,10 @@ body {
 #roboHome .page_con .wrap .txts .txt1 {
   color: #FFBF13;
 }
+/* 퍼스트위클리 */
+#firstWeekly .page_con .wrap .txts .txt1 {
+  color: #455EA1;
+}
 /* 비콘 */
 #vicon .page_con .wrap .txts .txt1 {
   color: #EF71AD;
@@ -362,6 +382,7 @@ body {
 #esresortclubHome .page_con .wrap .txts .txt1 {
   color: #258646;
 }
+/* --- */
 .page_con .wrap .txts .txt2 {
 	font-size: 1rem;
 }
@@ -378,15 +399,21 @@ body {
 	position: absolute;
 	bottom: 1rem;
 	right: 1rem;
-	background-color: #FFF;
+	background-color: rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 	font-size: 1rem;
 	padding: 0.4rem 0.8rem;
 	margin-left: auto;
 }
+/* 로보영어 홈페이지 */
 #roboHome .page_con .wrap .address {
 	background-color: #FFE295;
 }
+/* 퍼스트위클리 */
+#firstWeekly .page_con .wrap .address {
+	background-color: #C9D4F0;
+}
+/* --- */
 .image_con {
 	display: flex;
 	column-gap: 3%;
@@ -407,10 +434,12 @@ body {
 	text-align: center;
 	padding: 0.3rem 0.5rem;
 }
+/* 비콘 */
 #vicon .image_con .wrap .vs {
 	border: 1px solid #CA166D;
 	color: #CA166D;
 }
+/* --- */
 .image_con .wrap.v1 {
 	width: 44%;
 }
@@ -490,6 +519,13 @@ body {
 }
 #roboHome .swiper .swiperbtn .swiper-button-next {
   background-image: url('../img/robo_home/btn_next.svg');
+}
+/* 퍼스트위클리 */
+#firstWeekly .swiper .swiperbtn .swiper-button-prev {
+  background-image: url('../img/firstWeekly/btn_prev.svg');
+}
+#firstWeekly .swiper .swiperbtn .swiper-button-next {
+  background-image: url('../img/firstWeekly/btn_next.svg');
 }
 /* 비콘 */
 #vicon .swiper .swiperbtn .swiper-button-prev {
@@ -571,6 +607,22 @@ body {
 }
 
 /* ------------------------------------ */
+/* [공통] firstWeekly 폴더 */
+#firstWeekly {
+	width: 100%;
+  min-height: 100vh;
+	box-sizing: border-box;
+	background-color: #F2F6FF;
+	padding: 3rem;
+}
+#firstWeekly .box {
+	width: 100%;
+	max-width: 1600px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+/* ------------------------------------ */
 /* [공통] vicon 폴더 */
 #vicon {
 	width: 100%;
@@ -592,7 +644,7 @@ body {
 	width: 100%;
   min-height: 100vh;
 	box-sizing: border-box;
-	background-color: #f5fff8;
+	background-color: #F5FFF8;
 	padding: 3rem;
 }
 #esresortclubHome .box {
@@ -601,7 +653,6 @@ body {
 	box-sizing: border-box;
 	margin: 0 auto;
 }
-
 
 /* ------------------------------------------------------------------------------------ */
 /* 마우스 hover PC 버전만 적용 */
@@ -617,8 +668,14 @@ body {
 		visibility: visible;
 	}
 	/* 운영 페이지 링크 버튼 - 배경 색상 변경 */
+	/* 로보영어 홈페이지 */
 	#roboHome .page_con .wrap .address:hover {
 		background-color: #FFB900;
+		color: #FFF;
+	}
+	/* 퍼스트위클리 */
+	#firstWeekly .page_con .wrap .address:hover {
+		background-color: #455EA1;
 		color: #FFF;
 	}
 
@@ -651,17 +708,30 @@ body {
 	#roboHome .swiper .swiperbtn .swiper-button-next:hover {
 		background-image: url('../img/robo_home/btn_next_hover.svg');
 	}
+	/* 퍼스트위클리 */
+	/* swiper 이전 버튼 - 배경 이미지 변경 */
+	#firstWeekly .swiper .swiperbtn .swiper-button-prev:hover {
+		background-image: url('../img/firstWeekly/btn_prev_hover.svg');
+	}
+	/* swiper 다음 버튼 - 배경 이미지 변경 */
+	#firstWeekly .swiper .swiperbtn .swiper-button-next:hover {
+		background-image: url('../img/firstWeekly/btn_next_hover.svg');
+	}
 	/* 비콘 */
+	/* swiper 이전 버튼 - 배경 이미지 변경 */
 	#vicon .swiper .swiperbtn .swiper-button-prev:hover {
 		background-image: url('../img/vicon/btn_prev_hover.svg');
 	}
+	/* swiper 다음 버튼 - 배경 이미지 변경 */
 	#vicon .swiper .swiperbtn .swiper-button-next:hover {
 		background-image: url('../img/vicon/btn_next_hover.svg');
 	}
 	/* 이에스리조트클럽 홈페지 */
+	/* swiper 이전 버튼 - 배경 이미지 변경 */
 	#esresortclubHome .swiper .swiperbtn .swiper-button-prev:hover {
 		background-image: url('../img/esresortclub_home/btn_prev_hover.svg');
 	}
+	/* swiper 다음 버튼 - 배경 이미지 변경 */
 	#esresortclubHome .swiper .swiperbtn .swiper-button-next:hover {
 		background-image: url('../img/esresortclub_home/btn_next_hover.svg');
 	}
