@@ -77,6 +77,15 @@
   background-color: #455EA1;
   color: #FFF;
 }
+/* 퍼스트타임즈줌 */
+.firstTimesZoom::-moz-selection {
+  background-color: #067162;
+  color: #FFF;
+}
+.firstTimesZoom::selection {
+  background-color: #067162;
+  color: #FFF;
+}
 /* 비콘 */
 .vicon::-moz-selection {
   background-color: #EF71AD;
@@ -223,6 +232,10 @@ body {
 /* 퍼스트위클리 */
 #firstWeekly .event { 
   background-color: #455EA1;
+}
+/* 퍼스트타임즈줌 */
+#firstTimesZoom .event { 
+  background-color: #067162;
 }
 /* 비콘 */
 #vicon .event { 
@@ -374,6 +387,10 @@ body {
 #firstWeekly .page_con .wrap .txts .txt1 {
   color: #455EA1;
 }
+/* 퍼스트타임즈줌 */
+#firstTimesZoom .page_con .wrap .txts .txt1 {
+  color: #067162;
+}
 /* 비콘 */
 #vicon .page_con .wrap .txts .txt1 {
   color: #EF71AD;
@@ -412,6 +429,10 @@ body {
 /* 퍼스트위클리 */
 #firstWeekly .page_con .wrap .address {
 	background-color: #C9D4F0;
+}
+/* 퍼스트타임즈줌 */
+#firstTimesZoom .page_con .wrap .address {
+	background-color: #C7E7E3;
 }
 /* --- */
 .image_con {
@@ -527,6 +548,13 @@ body {
 #firstWeekly .swiper .swiperbtn .swiper-button-next {
   background-image: url('../img/firstWeekly/btn_next.svg');
 }
+/* 퍼스트타임즈줌 */
+#firstTimesZoom .swiper .swiperbtn .swiper-button-prev {
+  background-image: url('../img/firstTimesZoom/btn_prev.svg');
+}
+#firstTimesZoom .swiper .swiperbtn .swiper-button-next {
+  background-image: url('../img/firstTimesZoom/btn_next.svg');
+}
 /* 비콘 */
 #vicon .swiper .swiperbtn .swiper-button-prev {
   background-image: url('../img/vicon/btn_prev.svg');
@@ -623,6 +651,22 @@ body {
 }
 
 /* ------------------------------------ */
+/* [공통] firstTimesZoom 폴더 */
+#firstTimesZoom {
+	width: 100%;
+  min-height: 100vh;
+	box-sizing: border-box;
+	background-color: #F1FFFD;
+	padding: 3rem;
+}
+#firstTimesZoom .box {
+	width: 100%;
+	max-width: 1600px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+/* ------------------------------------ */
 /* [공통] vicon 폴더 */
 #vicon {
 	width: 100%;
@@ -678,6 +722,11 @@ body {
 		background-color: #455EA1;
 		color: #FFF;
 	}
+	/* 퍼스트타임즈줌 */
+	#firstTimesZoom .page_con .wrap .address:hover {
+		background-color: #067162;
+		color: #FFF;
+	}
 
 	/* ------------------------------------ */
 	/* [공통] swiper */
@@ -716,6 +765,15 @@ body {
 	/* swiper 다음 버튼 - 배경 이미지 변경 */
 	#firstWeekly .swiper .swiperbtn .swiper-button-next:hover {
 		background-image: url('../img/firstWeekly/btn_next_hover.svg');
+	}
+		/* 퍼스트타임즈줌 */
+	/* swiper 이전 버튼 - 배경 이미지 변경 */
+	#firstTimesZoom .swiper .swiperbtn .swiper-button-prev:hover {
+		background-image: url('../img/firstTimesZoom/btn_prev_hover.svg');
+	}
+	/* swiper 다음 버튼 - 배경 이미지 변경 */
+	#firstTimesZoom .swiper .swiperbtn .swiper-button-next:hover {
+		background-image: url('../img/firstTimesZoom/btn_next_hover.svg');
 	}
 	/* 비콘 */
 	/* swiper 이전 버튼 - 배경 이미지 변경 */
