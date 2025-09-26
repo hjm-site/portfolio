@@ -68,6 +68,15 @@
   background-color: #FFBF13;
   color: #FFF;
 }
+/* Hello AI 스피킹 */
+.helloAiSpeaking::-moz-selection {
+  background-color: #E3683D;
+  color: #FFF;
+}
+.helloAiSpeaking::selection {
+  background-color: #E3683D;
+  color: #FFF;
+}
 /* 퍼스트위클리 */
 .firstWeekly::-moz-selection {
   background-color: #455EA1;
@@ -229,6 +238,10 @@ body {
 #roboHome .event { 
   background-color: #FFBF13;
 }
+/* Hello AI 스피킹 */
+#helloAiSpeaking .event { 
+  background-color: #E3683D;
+}
 /* 퍼스트위클리 */
 #firstWeekly .event { 
   background-color: #455EA1;
@@ -382,6 +395,10 @@ body {
 /* 로보영어 홈페이지 */
 #roboHome .page_con .wrap .txts .txt1 {
   color: #FFBF13;
+}
+/* Hello AI 스피킹 */
+#helloAiSpeaking .page_con .wrap .txts .txt1 {
+  color: #E3683D;
 }
 /* 퍼스트위클리 */
 #firstWeekly .page_con .wrap .txts .txt1 {
@@ -541,19 +558,26 @@ body {
 #roboHome .swiper .swiperbtn .swiper-button-next {
   background-image: url('../img/robo_home/btn_next.svg');
 }
+/* Hello AI 스피킹 */
+#helloAiSpeaking .swiper .swiperbtn .swiper-button-prev {
+  background-image: url('../img/helloai_speaking/btn_prev.svg');
+}
+#helloAiSpeaking .swiper .swiperbtn .swiper-button-next {
+  background-image: url('../img/helloai_speaking/btn_next.svg');
+}
 /* 퍼스트위클리 */
 #firstWeekly .swiper .swiperbtn .swiper-button-prev {
-  background-image: url('../img/firstWeekly/btn_prev.svg');
+  background-image: url('../img/firstweekly/btn_prev.svg');
 }
 #firstWeekly .swiper .swiperbtn .swiper-button-next {
-  background-image: url('../img/firstWeekly/btn_next.svg');
+  background-image: url('../img/firstweekly/btn_next.svg');
 }
 /* 퍼스트타임즈줌 */
 #firstTimesZoom .swiper .swiperbtn .swiper-button-prev {
-  background-image: url('../img/firstTimesZoom/btn_prev.svg');
+  background-image: url('../img/firsttimeszoom/btn_prev.svg');
 }
 #firstTimesZoom .swiper .swiperbtn .swiper-button-next {
-  background-image: url('../img/firstTimesZoom/btn_next.svg');
+  background-image: url('../img/firsttimeszoom/btn_next.svg');
 }
 /* 비콘 */
 #vicon .swiper .swiperbtn .swiper-button-prev {
@@ -628,6 +652,22 @@ body {
 	padding: 3rem;
 }
 #roboHome .box {
+	width: 100%;
+	max-width: 1600px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+/* ------------------------------------ */
+/* [공통] helloAiSpeaking 폴더 */
+#helloAiSpeaking {
+	width: 100%;
+  min-height: 100vh;
+	box-sizing: border-box;
+	background-color: #FFF5F1;
+	padding: 3rem;
+}
+#helloAiSpeaking .box {
 	width: 100%;
 	max-width: 1600px;
 	box-sizing: border-box;
@@ -757,23 +797,32 @@ body {
 	#roboHome .swiper .swiperbtn .swiper-button-next:hover {
 		background-image: url('../img/robo_home/btn_next_hover.svg');
 	}
+	/* Hello AI 스피킹 */
+	/* swiper 이전 버튼 - 배경 이미지 변경 */
+	#helloAiSpeaking .swiper .swiperbtn .swiper-button-prev:hover {
+		background-image: url('../img/helloai_speaking/btn_prev_hover.svg');
+	}
+	/* swiper 다음 버튼 - 배경 이미지 변경 */
+	#helloAiSpeaking .swiper .swiperbtn .swiper-button-next:hover {
+		background-image: url('../img/helloai_speaking/btn_next_hover.svg');
+	}
 	/* 퍼스트위클리 */
 	/* swiper 이전 버튼 - 배경 이미지 변경 */
 	#firstWeekly .swiper .swiperbtn .swiper-button-prev:hover {
-		background-image: url('../img/firstWeekly/btn_prev_hover.svg');
+		background-image: url('../img/firstweekly/btn_prev_hover.svg');
 	}
 	/* swiper 다음 버튼 - 배경 이미지 변경 */
 	#firstWeekly .swiper .swiperbtn .swiper-button-next:hover {
-		background-image: url('../img/firstWeekly/btn_next_hover.svg');
+		background-image: url('../img/firstweekly/btn_next_hover.svg');
 	}
 		/* 퍼스트타임즈줌 */
 	/* swiper 이전 버튼 - 배경 이미지 변경 */
 	#firstTimesZoom .swiper .swiperbtn .swiper-button-prev:hover {
-		background-image: url('../img/firstTimesZoom/btn_prev_hover.svg');
+		background-image: url('../img/firsttimeszoom/btn_prev_hover.svg');
 	}
 	/* swiper 다음 버튼 - 배경 이미지 변경 */
 	#firstTimesZoom .swiper .swiperbtn .swiper-button-next:hover {
-		background-image: url('../img/firstTimesZoom/btn_next_hover.svg');
+		background-image: url('../img/firsttimeszoom/btn_next_hover.svg');
 	}
 	/* 비콘 */
 	/* swiper 이전 버튼 - 배경 이미지 변경 */
