@@ -77,6 +77,15 @@
   background-color: #E3683D;
   color: #FFF;
 }
+/* 학원줌 */
+.hwZoom::-moz-selection {
+  background-color: #FFCC00;
+  color: #FFF;
+}
+.hwZoom::selection {
+  background-color: #FFCC00;
+  color: #FFF;
+}
 /* 퍼스트위클리 */
 .firstWeekly::-moz-selection {
   background-color: #455EA1;
@@ -242,6 +251,10 @@ body {
 #helloAiSpeaking .event { 
   background-color: #E3683D;
 }
+/* 학원줌 */
+#hwZoom .event { 
+  background-color: #FFCC00;
+}
 /* 퍼스트위클리 */
 #firstWeekly .event { 
   background-color: #455EA1;
@@ -400,6 +413,10 @@ body {
 #helloAiSpeaking .page_con .wrap .txts .txt1 {
   color: #E3683D;
 }
+/* 학원줌 */
+#hwZoom .page_con .wrap .txts .txt1 {
+  color: #FFCC00;
+}
 /* 퍼스트위클리 */
 #firstWeekly .page_con .wrap .txts .txt1 {
   color: #455EA1;
@@ -442,6 +459,10 @@ body {
 /* 로보영어 홈페이지 */
 #roboHome .page_con .wrap .address {
 	background-color: #FFE295;
+}
+/* 학원줌 */
+#hwZoom .page_con .wrap .address {
+	background-color: #FAE181;
 }
 /* 퍼스트위클리 */
 #firstWeekly .page_con .wrap .address {
@@ -565,6 +586,13 @@ body {
 #helloAiSpeaking .swiper .swiperbtn .swiper-button-next {
   background-image: url('../img/helloai_speaking/btn_next.svg');
 }
+/* 학원줌 */
+#hwZoom .swiper .swiperbtn .swiper-button-prev {
+  background-image: url('../img/hwzoom/btn_prev.svg');
+}
+#hwZoom .swiper .swiperbtn .swiper-button-next {
+  background-image: url('../img/hwzoom/btn_next.svg');
+}
 /* 퍼스트위클리 */
 #firstWeekly .swiper .swiperbtn .swiper-button-prev {
   background-image: url('../img/firstweekly/btn_prev.svg');
@@ -675,6 +703,22 @@ body {
 }
 
 /* ------------------------------------ */
+/* [공통] hwZoom 폴더 */
+#hwZoom {
+	width: 100%;
+  min-height: 100vh;
+	box-sizing: border-box;
+	background-color: #FFFBEB;
+	padding: 3rem;
+}
+#hwZoom .box {
+	width: 100%;
+	max-width: 1600px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+/* ------------------------------------ */
 /* [공통] firstWeekly 폴더 */
 #firstWeekly {
 	width: 100%;
@@ -757,6 +801,11 @@ body {
 		background-color: #FFB900;
 		color: #FFF;
 	}
+	/* 학원줌 */
+	#hwZoom .page_con .wrap .address:hover {
+		background-color: #FFCC00;
+		color: #FFF;
+	}
 	/* 퍼스트위클리 */
 	#firstWeekly .page_con .wrap .address:hover {
 		background-color: #455EA1;
@@ -805,6 +854,15 @@ body {
 	/* swiper 다음 버튼 - 배경 이미지 변경 */
 	#helloAiSpeaking .swiper .swiperbtn .swiper-button-next:hover {
 		background-image: url('../img/helloai_speaking/btn_next_hover.svg');
+	}
+	/* 학원줌 */
+	/* swiper 이전 버튼 - 배경 이미지 변경 */
+	#hwZoom .swiper .swiperbtn .swiper-button-prev:hover {
+		background-image: url('../img/hwzoom/btn_prev_hover.svg');
+	}
+	/* swiper 다음 버튼 - 배경 이미지 변경 */
+	#hwZoom .swiper .swiperbtn .swiper-button-next:hover {
+		background-image: url('../img/hwzoom/btn_next_hover.svg');
 	}
 	/* 퍼스트위클리 */
 	/* swiper 이전 버튼 - 배경 이미지 변경 */
