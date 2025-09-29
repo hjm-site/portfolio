@@ -77,6 +77,15 @@
   background-color: #45B5A9;
   color: #FFF;
 }
+/* Hello AI e북 학습 프로그램 */
+.helloAiEbook::-moz-selection {
+  background-color: #E1673C;
+  color: #FFF;
+}
+.helloAiEbook::selection {
+  background-color: #E1673C;
+  color: #FFF;
+}
 /* Hello AI 스피킹 */
 .helloAiSpeaking::-moz-selection {
   background-color: #E3683D;
@@ -260,6 +269,10 @@ body {
 #helloAiWritingProficiency .event { 
   background-color: #45B5A9;
 }
+/* Hello AI e북 학습 프로그램 */
+#helloAiEbook .event { 
+  background-color: #E1673C;
+}
 /* Hello AI 스피킹 */
 #helloAiSpeaking .event { 
   background-color: #E3683D;
@@ -425,6 +438,10 @@ body {
 /* Hello AI 영어 작문 능력 시험 */
 #helloAiWritingProficiency .page_con .wrap .txts .txt1 {
   color: #45B5A9;
+}
+/* Hello AI e북 학습 프로그램 */
+#helloAiEbook .page_con .wrap .txts .txt1 {
+  color: #E1673C;
 }
 /* Hello AI 스피킹 */
 #helloAiSpeaking .page_con .wrap .txts .txt1 {
@@ -603,6 +620,13 @@ body {
 #helloAiWritingProficiency .swiper .swiperbtn .swiper-button-next {
   background-image: url('../img/helloai_writingproficiency/btn_next.svg');
 }
+/* Hello AI e북 학습 프로그램 */
+#helloAiEbook .swiper .swiperbtn .swiper-button-prev {
+  background-image: url('../img/helloai_ebook/btn_prev.svg');
+}
+#helloAiEbook .swiper .swiperbtn .swiper-button-next {
+  background-image: url('../img/helloai_ebook/btn_next.svg');
+}
 /* Hello AI 스피킹 */
 #helloAiSpeaking .swiper .swiperbtn .swiper-button-prev {
   background-image: url('../img/helloai_speaking/btn_prev.svg');
@@ -720,6 +744,22 @@ body {
 	padding: 3rem;
 }
 #helloAiWritingProficiency .box {
+	width: 100%;
+	max-width: 1600px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+/* ------------------------------------ */
+/* [공통] helloAiEbook 폴더 */
+#helloAiEbook {
+	width: 100%;
+  min-height: 100vh;
+	box-sizing: border-box;
+	background-color: #FFF8F5;
+	padding: 3rem;
+}
+#helloAiEbook .box {
 	width: 100%;
 	max-width: 1600px;
 	box-sizing: border-box;
@@ -894,6 +934,15 @@ body {
 	/* swiper 다음 버튼 - 배경 이미지 변경 */
 	#helloAiWritingProficiency .swiper .swiperbtn .swiper-button-next:hover {
 		background-image: url('../img/helloai_writingproficiency/btn_next_hover.svg');
+	}
+	/* Hello AI e북 학습 프로그램 */
+	/* swiper 이전 버튼 - 배경 이미지 변경 */
+	#helloAiEbook .swiper .swiperbtn .swiper-button-prev:hover {
+		background-image: url('../img/helloai_ebook/btn_prev_hover.svg');
+	}
+	/* swiper 다음 버튼 - 배경 이미지 변경 */
+	#helloAiEbook .swiper .swiperbtn .swiper-button-next:hover {
+		background-image: url('../img/helloai_ebook/btn_next_hover.svg');
 	}
 	/* Hello AI 스피킹 */
 	/* swiper 이전 버튼 - 배경 이미지 변경 */
