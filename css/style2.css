@@ -68,6 +68,15 @@
   background-color: #FFBF13;
   color: #FFF;
 }
+/* Hello AI 영어 작문 능력 시험 */
+.helloAiWritingProficiency::-moz-selection {
+  background-color: #45B5A9;
+  color: #FFF;
+}
+.helloAiWritingProficiency::selection {
+  background-color: #45B5A9;
+  color: #FFF;
+}
 /* Hello AI 스피킹 */
 .helloAiSpeaking::-moz-selection {
   background-color: #E3683D;
@@ -247,6 +256,10 @@ body {
 #roboHome .event { 
   background-color: #FFBF13;
 }
+/* Hello AI 영어 작문 능력 시험 */
+#helloAiWritingProficiency .event { 
+  background-color: #45B5A9;
+}
 /* Hello AI 스피킹 */
 #helloAiSpeaking .event { 
   background-color: #E3683D;
@@ -408,6 +421,10 @@ body {
 /* 로보영어 홈페이지 */
 #roboHome .page_con .wrap .txts .txt1 {
   color: #FFBF13;
+}
+/* Hello AI 영어 작문 능력 시험 */
+#helloAiWritingProficiency .page_con .wrap .txts .txt1 {
+  color: #45B5A9;
 }
 /* Hello AI 스피킹 */
 #helloAiSpeaking .page_con .wrap .txts .txt1 {
@@ -579,6 +596,13 @@ body {
 #roboHome .swiper .swiperbtn .swiper-button-next {
   background-image: url('../img/robo_home/btn_next.svg');
 }
+/* Hello AI 영어 작문 능력 시험 */
+#helloAiWritingProficiency .swiper .swiperbtn .swiper-button-prev {
+  background-image: url('../img/helloai_writingproficiency/btn_prev.svg');
+}
+#helloAiWritingProficiency .swiper .swiperbtn .swiper-button-next {
+  background-image: url('../img/helloai_writingproficiency/btn_next.svg');
+}
 /* Hello AI 스피킹 */
 #helloAiSpeaking .swiper .swiperbtn .swiper-button-prev {
   background-image: url('../img/helloai_speaking/btn_prev.svg');
@@ -680,6 +704,22 @@ body {
 	padding: 3rem;
 }
 #roboHome .box {
+	width: 100%;
+	max-width: 1600px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+/* ------------------------------------ */
+/* [공통] helloAiWritingProficiency 폴더 */
+#helloAiWritingProficiency {
+	width: 100%;
+  min-height: 100vh;
+	box-sizing: border-box;
+	background-color: #F5FFFE;
+	padding: 3rem;
+}
+#helloAiWritingProficiency .box {
 	width: 100%;
 	max-width: 1600px;
 	box-sizing: border-box;
@@ -845,6 +885,15 @@ body {
 	/* swiper 다음 버튼 - 배경 이미지 변경 */
 	#roboHome .swiper .swiperbtn .swiper-button-next:hover {
 		background-image: url('../img/robo_home/btn_next_hover.svg');
+	}
+	/* Hello AI 영어 작문 능력 시험 */
+	/* swiper 이전 버튼 - 배경 이미지 변경 */
+	#helloAiWritingProficiency .swiper .swiperbtn .swiper-button-prev:hover {
+		background-image: url('../img/helloai_writingproficiency/btn_prev_hover.svg');
+	}
+	/* swiper 다음 버튼 - 배경 이미지 변경 */
+	#helloAiWritingProficiency .swiper .swiperbtn .swiper-button-next:hover {
+		background-image: url('../img/helloai_writingproficiency/btn_next_hover.svg');
 	}
 	/* Hello AI 스피킹 */
 	/* swiper 이전 버튼 - 배경 이미지 변경 */
