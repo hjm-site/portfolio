@@ -77,6 +77,15 @@
   background-color: #5B59D0;
   color: #FFF;
 }
+/* 엘포트 */
+.lport::-moz-selection {
+  background-color: #05A2E6;
+  color: #FFF;
+}
+.lport::selection {
+  background-color: #05A2E6;
+  color: #FFF;
+}
 /* Hello AI 영어 작문 능력 시험 */
 .helloAiWritingProficiency::-moz-selection {
   background-color: #45B5A9;
@@ -281,6 +290,10 @@ body {
 #timesreading .event { 
   background-color: #5B59D0;
 }
+/* 엘포트 */
+#lport .event { 
+  background-color: #05A2E6;
+}
 /* Hello AI 영어 작문 능력 시험 */
 #helloAiWritingProficiency .event { 
   background-color: #45B5A9;
@@ -455,6 +468,10 @@ body {
 #timesreading .page_con .wrap .txts .txt1 {
   color: #5B59D0;
 }
+/* 엘포트 */
+#lport .page_con .wrap .txts .txt1 {
+  color: #05A2E6;
+}
 /* Hello AI 영어 작문 능력 시험 */
 #helloAiWritingProficiency .page_con .wrap .txts .txt1 {
   color: #45B5A9;
@@ -513,6 +530,10 @@ body {
 /* 로보영어 홈페이지 */
 #roboHome .page_con .wrap .address {
 	background-color: #FFE295;
+}
+/* 엘포트 */
+#lport .page_con .wrap .address {
+	background-color: #B7E5F8;
 }
 /* 학원줌 */
 #hwZoom .page_con .wrap .address {
@@ -639,6 +660,13 @@ body {
 }
 #timesreading .swiper .swiperbtn .swiper-button-next {
   background-image: url('../img/timesreading/btn_next.svg');
+}
+/* 엘포트 */
+#lport .swiper .swiperbtn .swiper-button-prev {
+  background-image: url('../img/lport/btn_prev.svg');
+}
+#lport .swiper .swiperbtn .swiper-button-next {
+  background-image: url('../img/lport/btn_next.svg');
 }
 /* Hello AI 영어 작문 능력 시험 */
 #helloAiWritingProficiency .swiper .swiperbtn .swiper-button-prev {
@@ -771,6 +799,22 @@ body {
 	padding: 3rem;
 }
 #timesreading .box {
+	width: 100%;
+	max-width: 1600px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+/* ------------------------------------ */
+/* [공통] lport 폴더 */
+#lport {
+	width: 100%;
+  min-height: 100vh;
+	box-sizing: border-box;
+	background-color: #F2FBFF;
+	padding: 3rem;
+}
+#lport .box {
 	width: 100%;
 	max-width: 1600px;
 	box-sizing: border-box;
@@ -924,6 +968,11 @@ body {
 		background-color: #FFB900;
 		color: #FFF;
 	}
+	/* 엘포트 */
+	#lport .page_con .wrap .address:hover {
+		background-color: #05A2E6;
+		color: #FFF;
+	}
 	/* 학원줌 */
 	#hwZoom .page_con .wrap .address:hover {
 		background-color: #FFCC00;
@@ -977,6 +1026,15 @@ body {
 	/* swiper 다음 버튼 - 배경 이미지 변경 */
 	#timesreading .swiper .swiperbtn .swiper-button-next:hover {
 		background-image: url('../img/timesreading/btn_next_hover.svg');
+	}
+	/* 엘포트 */
+	/* swiper 이전 버튼 - 배경 이미지 변경 */
+	#lport .swiper .swiperbtn .swiper-button-prev:hover {
+		background-image: url('../img/lport/btn_prev_hover.svg');
+	}
+	/* swiper 다음 버튼 - 배경 이미지 변경 */
+	#lport .swiper .swiperbtn .swiper-button-next:hover {
+		background-image: url('../img/lport/btn_next_hover.svg');
 	}
 	/* Hello AI 영어 작문 능력 시험 */
 	/* swiper 이전 버튼 - 배경 이미지 변경 */
