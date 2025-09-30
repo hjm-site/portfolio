@@ -95,6 +95,15 @@
   background-color: #3068BD;
   color: #FFF;
 }
+/* 캉가잉글리쉬 로보 */
+.kangaRobo::-moz-selection {
+  background-color: #FFBB00;
+  color: #FFF;
+}
+.kangaRobo::selection {
+  background-color: #FFBB00;
+  color: #FFF;
+}
 /* 코코아 */
 .cocoa::-moz-selection {
   background-color: #FFC300;
@@ -294,6 +303,9 @@ body {
 .title .logo.v2 {
   width: 4rem;
 }
+.title .logo.v3 {
+  width: 10rem;
+}
 .title .txt {
 	box-sizing: border-box;
 	font-family: 'ptd_B';
@@ -342,6 +354,10 @@ body {
 /* 로보영어 AI */
 #roboAi .event { 
   background-color: #3068BD;
+}
+/* 캉가잉글리쉬 로보 */
+#kangaRobo .event { 
+  background-color: #FFBB00;
 }
 /* 코코아 */
 #cocoa .event { 
@@ -540,6 +556,10 @@ body {
 /* 로보영어 AI */
 #roboAi .page_con .wrap .txts .txt1 {
   color: #3068BD;
+}
+/* 캉가잉글리쉬 로보 */
+#kangaRobo .page_con .wrap .txts .txt1 {
+  color: #FFBB00;
 }
 /* 코코아 */
 #cocoa .page_con .wrap .txts .txt1 {
@@ -764,6 +784,13 @@ body {
 #roboAi .swiper .swiperbtn .swiper-button-next {
   background-image: url('../img/robo_ai/btn_next.svg');
 }
+/* 캉가잉글리쉬 로보 */
+#kangaRobo .swiper .swiperbtn .swiper-button-prev {
+  background-image: url('../img/kanga_robo/btn_prev.svg');
+}
+#kangaRobo .swiper .swiperbtn .swiper-button-next {
+  background-image: url('../img/kanga_robo/btn_next.svg');
+}
 /* 코코아 */
 #cocoa .swiper .swiperbtn .swiper-button-prev {
   background-image: url('../img/cocoa/btn_prev.svg');
@@ -955,6 +982,22 @@ body {
 	padding: 3rem;
 }
 #roboAi .box {
+	width: 100%;
+	max-width: 1600px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+/* ------------------------------------ */
+/* [공통] kangaRobo 폴더 */
+#kangaRobo {
+	width: 100%;
+  min-height: 100vh;
+	box-sizing: border-box;
+	background-color: #FFFBEF;
+	padding: 3rem;
+}
+#kangaRobo .box {
 	width: 100%;
 	max-width: 1600px;
 	box-sizing: border-box;
@@ -1254,6 +1297,15 @@ body {
 	#roboAi .swiper .swiperbtn .swiper-button-next:hover {
 		background-image: url('../img/robo_ai/btn_next_hover.svg');
 	}
+	/* 캉가잉글리쉬 로보 */
+	/* swiper 이전 버튼 - 배경 이미지 변경 */
+	#kangaRobo .swiper .swiperbtn .swiper-button-prev:hover {
+		background-image: url('../img/kanga_robo/btn_prev_hover.svg');
+	}
+	/* swiper 다음 버튼 - 배경 이미지 변경 */
+	#kangaRobo .swiper .swiperbtn .swiper-button-next:hover {
+		background-image: url('../img/kanga_robo/btn_next_hover.svg');
+	}
 	/* 코코아 */
 	/* swiper 이전 버튼 - 배경 이미지 변경 */
 	#cocoa .swiper .swiperbtn .swiper-button-prev:hover {
@@ -1517,6 +1569,9 @@ body {
 	}
 	.title .logo.v2 {
 		width: 3rem;
+	}
+	.title .logo.v3 {
+  	width: 8rem;
 	}
 	.page_con .wrap .link {
 		min-height: 10rem;
