@@ -77,6 +77,15 @@
   background-color: #FFC800;
   color: #FFF;
 }
+/* 로보영어 평가 */
+.roboAssessment::-moz-selection {
+  background-color: #396CE8;
+  color: #FFF;
+}
+.roboAssessment::selection {
+  background-color: #396CE8;
+  color: #FFF;
+}
 /* 코코아 */
 .cocoa::-moz-selection {
   background-color: #FFC300;
@@ -317,6 +326,10 @@ body {
 #roboAcademy .event { 
   background-color: #FFC800;
 }
+/* 로보영어 평가 */
+#roboAssessment .event { 
+  background-color: #396CE8;
+}
 /* 코코아 */
 #cocoa .event { 
   background-color: #FFC300;
@@ -506,6 +519,10 @@ body {
 /* 로보영어 아카데미 */
 #roboAcademy .page_con .wrap .txts .txt1 {
   color: #FFC800;
+}
+/* 로보영어 평가 */
+#roboAssessment .page_con .wrap .txts .txt1 {
+  color: #396CE8;
 }
 /* 코코아 */
 #cocoa .page_con .wrap .txts .txt1 {
@@ -716,6 +733,13 @@ body {
 #roboAcademy .swiper .swiperbtn .swiper-button-next {
   background-image: url('../img/robo_academy/btn_next.svg');
 }
+/* 로보영어 평가 */
+#roboAssessment .swiper .swiperbtn .swiper-button-prev {
+  background-image: url('../img/robo_assessment/btn_prev.svg');
+}
+#roboAssessment .swiper .swiperbtn .swiper-button-next {
+  background-image: url('../img/robo_assessment/btn_next.svg');
+}
 /* 코코아 */
 #cocoa .swiper .swiperbtn .swiper-button-prev {
   background-image: url('../img/cocoa/btn_prev.svg');
@@ -859,6 +883,22 @@ body {
 	padding: 3rem;
 }
 #roboHome .box {
+	width: 100%;
+	max-width: 1600px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+/* ------------------------------------ */
+/* [공통] roboAssessment 폴더 */
+#roboAssessment {
+	width: 100%;
+  min-height: 100vh;
+	box-sizing: border-box;
+	background-color: #ECF1FF;
+	padding: 3rem;
+}
+#roboAssessment .box {
 	width: 100%;
 	max-width: 1600px;
 	box-sizing: border-box;
@@ -1155,6 +1195,15 @@ body {
 	/* swiper 다음 버튼 - 배경 이미지 변경 */
 	#roboAcademy .swiper .swiperbtn .swiper-button-next:hover {
 		background-image: url('../img/robo_academy/btn_next_hover.svg');
+	}
+	/* 로보영어 평가 */
+	/* swiper 이전 버튼 - 배경 이미지 변경 */
+	#roboAssessment .swiper .swiperbtn .swiper-button-prev:hover {
+		background-image: url('../img/robo_assessment/btn_prev_hover.svg');
+	}
+	/* swiper 다음 버튼 - 배경 이미지 변경 */
+	#roboAssessment .swiper .swiperbtn .swiper-button-next:hover {
+		background-image: url('../img/robo_assessment/btn_next_hover.svg');
 	}
 	/* 코코아 */
 	/* swiper 이전 버튼 - 배경 이미지 변경 */
