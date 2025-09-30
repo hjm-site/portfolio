@@ -86,6 +86,15 @@
   background-color: #396CE8;
   color: #FFF;
 }
+/* 로보영어 AI */
+.roboAi::-moz-selection {
+  background-color: #3068BD;
+  color: #FFF;
+}
+.roboAi::selection {
+  background-color: #3068BD;
+  color: #FFF;
+}
 /* 코코아 */
 .cocoa::-moz-selection {
   background-color: #FFC300;
@@ -330,6 +339,10 @@ body {
 #roboAssessment .event { 
   background-color: #396CE8;
 }
+/* 로보영어 AI */
+#roboAi .event { 
+  background-color: #3068BD;
+}
 /* 코코아 */
 #cocoa .event { 
   background-color: #FFC300;
@@ -523,6 +536,10 @@ body {
 /* 로보영어 평가 */
 #roboAssessment .page_con .wrap .txts .txt1 {
   color: #396CE8;
+}
+/* 로보영어 AI */
+#roboAi .page_con .wrap .txts .txt1 {
+  color: #3068BD;
 }
 /* 코코아 */
 #cocoa .page_con .wrap .txts .txt1 {
@@ -740,6 +757,13 @@ body {
 #roboAssessment .swiper .swiperbtn .swiper-button-next {
   background-image: url('../img/robo_assessment/btn_next.svg');
 }
+/* 로보영어 AI */
+#roboAi .swiper .swiperbtn .swiper-button-prev {
+  background-image: url('../img/robo_ai/btn_prev.svg');
+}
+#roboAi .swiper .swiperbtn .swiper-button-next {
+  background-image: url('../img/robo_ai/btn_next.svg');
+}
 /* 코코아 */
 #cocoa .swiper .swiperbtn .swiper-button-prev {
   background-image: url('../img/cocoa/btn_prev.svg');
@@ -890,6 +914,22 @@ body {
 }
 
 /* ------------------------------------ */
+/* [공통] roboAcademy 폴더 */
+#roboAcademy {
+	width: 100%;
+  min-height: 100vh;
+	box-sizing: border-box;
+	background-color: #FFFAE9;
+	padding: 3rem;
+}
+#roboAcademy .box {
+	width: 100%;
+	max-width: 1600px;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+/* ------------------------------------ */
 /* [공통] roboAssessment 폴더 */
 #roboAssessment {
 	width: 100%;
@@ -906,15 +946,15 @@ body {
 }
 
 /* ------------------------------------ */
-/* [공통] roboAcademy 폴더 */
-#roboAcademy {
+/* [공통] roboAi 폴더 */
+#roboAi {
 	width: 100%;
   min-height: 100vh;
 	box-sizing: border-box;
-	background-color: #FFFAE9;
+	background-color: #EEF5FF;
 	padding: 3rem;
 }
-#roboAcademy .box {
+#roboAi .box {
 	width: 100%;
 	max-width: 1600px;
 	box-sizing: border-box;
@@ -1204,6 +1244,15 @@ body {
 	/* swiper 다음 버튼 - 배경 이미지 변경 */
 	#roboAssessment .swiper .swiperbtn .swiper-button-next:hover {
 		background-image: url('../img/robo_assessment/btn_next_hover.svg');
+	}
+	/* 로보영어 AI */
+	/* swiper 이전 버튼 - 배경 이미지 변경 */
+	#roboAi .swiper .swiperbtn .swiper-button-prev:hover {
+		background-image: url('../img/robo_ai/btn_prev_hover.svg');
+	}
+	/* swiper 다음 버튼 - 배경 이미지 변경 */
+	#roboAi .swiper .swiperbtn .swiper-button-next:hover {
+		background-image: url('../img/robo_ai/btn_next_hover.svg');
 	}
 	/* 코코아 */
 	/* swiper 이전 버튼 - 배경 이미지 변경 */
